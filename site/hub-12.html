@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Английский с нуля: Волшебный Вордсбург</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a1428;--panel:#2a2142;--panel2:#241c3a;--gold:#d4af37;--gold2:#f0d060;
+--text:#f0e8d8;--dim:#b8a8c8;--red:#c05050;--green:#5cb870;--blue:#5c8ad4;--cat:#e2943e;--dog:#c86a50;--whale:#5c8ad4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.5;padding:14px}
+.wrap{max-width:960px;margin:0 auto}
+.px{font-family:'Press Start 2P','Segoe UI',monospace}
+header.top{display:flex;gap:14px;align-items:center;background:var(--panel);border:3px solid var(--gold);
+border-radius:10px;padding:12px 16px;margin-bottom:12px;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+header.top img.char{width:84px;height:84px;image-rendering:pixelated;flex-shrink:0}
+.bubble{background:var(--panel2);border:2px solid var(--dim);border-radius:10px;padding:10px 14px;position:relative;flex:1}
+.bubble:before{content:'';position:absolute;left:-12px;top:50%;transform:translateY(-50%);
+border:6px solid transparent;border-right-color:var(--dim)}
+.tt{font-size:13px;line-height:1.6;color:var(--gold2);margin-bottom:6px}
+.tt .sub{display:block;font-size:9px;color:var(--dim);margin-top:5px}
+nav.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+nav.tabs a{color:var(--text);text-decoration:none;background:var(--panel);border:2px solid var(--dim);
+border-radius:8px;padding:8px 12px;font-size:9px}
+nav.tabs a.on{background:var(--gold);color:#241c3a;border-color:var(--gold2)}
+nav.tabs a:hover{border-color:var(--gold)}
+.panel{background:var(--panel);border:2px solid #4a3c68;border-radius:10px;padding:14px;margin-bottom:14px}
+h2.sec{font-size:11px;color:var(--gold2);margin-bottom:10px;letter-spacing:1px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{background:var(--panel2);border:2px solid #4a3c68;border-radius:10px;padding:10px;text-align:center}
+.card img{width:96px;height:96px;image-rendering:pixelated;border-radius:6px}
+.card .en{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--gold2);margin:8px 0 6px;word-break:break-word}
+.card .ipa{color:var(--dim);font-size:12px}
+.card .ru{font-size:13px;margin-top:4px}
+.btn{cursor:pointer;background:var(--gold);color:#241c3a;border:none;border-radius:8px;padding:8px 14px;
+font-family:'Press Start 2P',monospace;font-size:10px;box-shadow:0 3px 0 #8a6d1c}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.btn.ghost{background:var(--panel2);color:var(--text);box-shadow:0 3px 0 #17112a;border:2px solid var(--dim)}
+.snd{cursor:pointer;background:none;border:none;font-size:20px;line-height:1;margin-left:4px}
+.rules li{margin:8px 0 8px 18px}
+.rules b{color:var(--gold2)}
+.ex{background:var(--panel2);border-left:4px solid var(--gold);border-radius:6px;padding:8px 12px;margin:8px 0;
+display:flex;justify-content:space-between;gap:10px;align-items:center}
+.ex .en{font-family:'Press Start 2P',monospace;font-size:10px;color:#fff}
+.ex .ru{color:var(--dim);font-size:13px;text-align:right}
+.quiz-q{margin:14px 0;padding:12px;background:var(--panel2);border-radius:8px}
+.quiz-q .q{margin-bottom:10px;font-size:14px}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 12px;background:var(--panel);
+color:var(--text);border:2px solid var(--dim);border-radius:8px;cursor:pointer;font-size:14px}
+.opt:hover{border-color:var(--gold)}
+.opt.ok{border-color:var(--green);background:#1d3324}
+.opt.bad{border-color:var(--red);background:#3a1d22}
+.opt:disabled{cursor:default;opacity:.85}
+.why{margin-top:8px;color:var(--dim);font-size:13px;display:none}
+.why.show{display:block}
+.game-score{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--gold2);margin-bottom:10px}
+.game-img{width:140px;height:140px;image-rendering:pixelated;display:block;margin:0 auto 12px}
+.game-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;max-width:520px;margin:0 auto}
+.scene{margin:16px 0;background:var(--panel2);border:2px solid #4a3c68;border-radius:10px;padding:12px}
+.scene img.pic{width:100%;max-width:640px;display:block;margin:0 auto 10px;border-radius:8px;image-rendering:pixelated}
+.scene .label{font-size:12px;color:var(--dim);text-align:center;margin-bottom:8px}
+.line{background:var(--panel);border-radius:8px;padding:10px 12px;margin:8px 0;display:flex;gap:10px;align-items:flex-start}
+.line .entext{font-family:'Press Start 2P',monospace;font-size:10px;line-height:1.8;flex:1}
+.line .rutext{color:var(--dim);font-size:13px;display:none;margin-top:6px}
+.line.open .rutext{display:block}
+.tr{cursor:pointer;background:var(--panel2);color:var(--dim);border:1px solid var(--dim);border-radius:6px;
+font-size:10px;padding:5px 8px;white-space:nowrap}
+.hub{position:relative;display:inline-block;width:100%}
+.hub img{width:100%;image-rendering:pixelated;border-radius:8px;display:block}
+.spot{position:absolute;transform:translate(-50%,-50%);width:34px;height:34px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;font-family:'Press Start 2P',monospace;font-size:12px;
+color:#fff;text-decoration:none;border:3px solid #f5e8b8;box-shadow:0 0 0 2px #241a38,0 3px 6px rgba(0,0,0,.5);transition:transform .15s}
+.spot:hover{transform:translate(-50%,-50%) scale(1.25);z-index:5}
+.spot.cur{outline:3px solid #fff;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 2px #241a38,0 0 0 0 rgba(255,255,255,.7)}50%{box-shadow:0 0 0 2px #241a38,0 0 0 8px rgba(255,255,255,0)}}
+.chars3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:14px}
+.chars3 .card{display:flex;gap:10px;text-align:left;align-items:center}
+.chars3 img{width:72px;height:72px;flex-shrink:0}
+.chars3 .nm{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--gold2);margin-bottom:6px}
+.chars3 .rl{font-size:12px;color:var(--dim)}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.legend span{font-size:9px;font-family:'Press Start 2P',monospace;padding:6px 8px;border-radius:6px;color:#fff}
+.letters{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.letters .card img{width:72px;height:72px}
+.letters .card .en{font-size:9px}
+.final{font-size:13px;color:var(--gold2);margin-top:10px}
+.stepik{display:inline-block;margin:4px 6px 0 0;font-size:9px}
+@media (max-width:640px){header.top{flex-direction:column;text-align:center}.bubble:before{display:none}
+.cards{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <img class="char" src="assets/chars/whale_idle.png" data-idle="assets/chars/whale_idle.png" data-talk="assets/chars/whale_talk.png" alt="кит">
+  <div class="bubble">
+    <div class="tt px">Английский с нуля: Волшебный Вордсбург<span class="sub">Добро пожаловать в Wordsburg — Вордсбург!</span></div>
+    <div style="font-size:13px">Это волшебный городок, где английский учат три наставника: сэр Бруно (грамматика),
+    мистер Уискерс (слова и произношение) и мудрый кит Океанус (истории). 12 уроков · 147+ слов · 12 историй.
+    Нажимай на места с номерами на карте и отправляйся в приключение!</div>
+  </div>
+</header>
+<div class="chars3"><div class="card"><img src="assets/chars/bulldog_idle.png" alt="Сэр Бруно">
+<div><div class="nm">Сэр Бруно</div><div class="rl">Гм! Я сэр Бруно. В моих школах — грамматика: to be, a/an, can и другие рыцарские правила!</div></div></div><div class="card"><img src="assets/chars/cat_idle.png" alt="Мистер Уискерс">
+<div><div class="nm">Мистер Уискерс</div><div class="rl">Мяу! Я мистер Уискерс. На рыночной площади я раздаю волшебные слова и учу произношению!</div></div></div><div class="card"><img src="assets/chars/whale_idle.png" alt="Кит Океанус">
+<div><div class="nm">Кит Океанус</div><div class="rl">Плеск! Я кит Океанус. Я парю над городком и рассказываю истории на английском!</div></div></div></div>
+<div class="panel">
+<h2 class="sec">🗺️ КАРТА ВОЛШЕБНОГО ВОРДСБУРГА</h2>
+<div class="legend"><span style="background:#c86a50">Модуль 1. Добро пожаловать в Вордсбург</span><span style="background:#b8862e">Модуль 2. Рыночная площадь</span><span style="background:#5c8ad4">Модуль 3. Улицы городка</span><span style="background:#7c5cb8">Модуль 4. Приключения героев</span></div>
+<div class="hub"><img src="assets/map.png" alt="Карта городка"><a class="spot" style="left:10.00%;top:68.75%;background:#c86a50" href="lesson-01-words.html" title="Урок 1. Приветствия и знакомство — Модуль 1. Добро пожаловать в Вордсбург">1</a><a class="spot" style="left:21.25%;top:47.92%;background:#c86a50" href="lesson-02-words.html" title="Урок 2. Волшебная азбука — Модуль 1. Добро пожаловать в Вордсбург">2</a><a class="spot" style="left:12.50%;top:29.17%;background:#c86a50" href="lesson-03-words.html" title="Урок 3. Числа 1–20 — Модуль 1. Добро пожаловать в Вордсбург">3</a><a class="spot" style="left:41.25%;top:64.58%;background:#b8862e" href="lesson-04-words.html" title="Урок 4. Цвета Вордсбурга — Модуль 2. Рыночная площадь">4</a><a class="spot" style="left:52.50%;top:70.83%;background:#b8862e" href="lesson-05-words.html" title="Урок 5. Еда и напитки — Модуль 2. Рыночная площадь">5</a><a class="spot" style="left:36.25%;top:47.92%;background:#b8862e" href="lesson-06-words.html" title="Урок 6. Семья — Модуль 2. Рыночная площадь">6</a><a class="spot" style="left:67.50%;top:68.75%;background:#5c8ad4" href="lesson-07-words.html" title="Урок 7. Мой дом — Модуль 3. Улицы городка">7</a><a class="spot" style="left:80.00%;top:56.25%;background:#5c8ad4" href="lesson-08-words.html" title="Урок 8. Животные Вордсбурга — Модуль 3. Улицы городка">8</a><a class="spot" style="left:62.50%;top:41.67%;background:#5c8ad4" href="lesson-09-words.html" title="Урок 9. Места в городке — Модуль 3. Улицы городка">9</a><a class="spot" style="left:87.50%;top:31.25%;background:#7c5cb8" href="lesson-10-words.html" title="Урок 10. Герои в движении — Модуль 4. Приключения героев">10</a><a class="spot" style="left:52.50%;top:27.08%;background:#7c5cb8" href="lesson-11-words.html" title="Урок 11. Мой день — Модуль 4. Приключения героев">11</a><a class="spot cur" style="left:35.00%;top:16.67%;background:#7c5cb8" href="lesson-12-words.html" title="Урок 12. Итоговый квест: день рождения дракончика — Модуль 4. Приключения героев">12</a></div>
+<div class="panel" style="text-align:center"><div class="final">📍 Ты сейчас в локации 12 — «Итоговый квест: день рождения дракончика». Выбирай следующую дорогу на карте!</div></div></div>
+<div class="panel" style="text-align:center"><div class="final">✨ Выбери локацию на карте — и вперёд, герой! ✨</div></div>
+
+</div>
+<script>
+function pickVoice(){
+  var vs = speechSynthesis.getVoices();
+  return vs.filter(function(v){return /^en([-_]|$)/i.test(v.lang) && /US|GB/i.test(v.lang);})[0]
+      || vs.filter(function(v){return /^en/i.test(v.lang);})[0] || null;
+}
+if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = function(){}; }
+function speak(text, btn, rate){
+  if (!('speechSynthesis' in window)) return;
+  var u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = rate || 0.85;
+  var v = pickVoice(); if (v) u.voice = v;
+  var chars = document.querySelectorAll('img.char');
+  chars.forEach(function(im){ im.src = im.getAttribute('data-talk'); });
+  var done = false;
+  function idle(){ if (done) return; done = true;
+    chars.forEach(function(im){ im.src = im.getAttribute('data-idle'); });
+    if (btn) btn.classList.remove('speaking'); }
+  u.onend = idle; u.onerror = idle;
+  if (btn) btn.classList.add('speaking');
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+  setTimeout(idle, 15000);
+}
+function toggleRu(el){ el.closest('.line').classList.toggle('open'); }
+function speakLine(btn, id){
+  var t = document.getElementById(id).getAttribute('data-en');
+  speak(t, btn, 0.8);
+}
+function speakAll(ids, btn){
+  var texts = ids.map(function(i){ return document.getElementById(i).getAttribute('data-en'); });
+  var i = 0;
+  function next(){
+    if (i >= texts.length) return;
+    speak(texts[i], btn, 0.8);
+    i++;
+  }
+  speak(texts[0], btn, 0.8); i = 1;
+  var chk = setInterval(function(){
+    if (!speechSynthesis.speaking){ clearInterval(chk); next(); }
+  }, 300);
+}
+</script>
+
+</body>
+</html>

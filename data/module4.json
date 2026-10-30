@@ -1,0 +1,842 @@
+{
+  "id": 4,
+  "title_ru": "Модуль 4. Приключения героев",
+  "title_en": "Module 4. Heroes' Adventures",
+  "lessons": [
+    {
+      "n": 10,
+      "title_ru": "Герои в движении",
+      "title_en": "Action Heroes",
+      "words": [
+        {
+          "en": "run",
+          "ru": "бежать",
+          "ipa": "/rʌn/",
+          "emoji": "🏃"
+        },
+        {
+          "en": "jump",
+          "ru": "прыгать",
+          "ipa": "/dʒʌmp/",
+          "emoji": "🤸"
+        },
+        {
+          "en": "swim",
+          "ru": "плавать",
+          "ipa": "/swɪm/",
+          "emoji": "🏊"
+        },
+        {
+          "en": "fly",
+          "ru": "летать",
+          "ipa": "/flaɪ/",
+          "emoji": "🦅"
+        },
+        {
+          "en": "read",
+          "ru": "читать",
+          "ipa": "/riːd/",
+          "emoji": "📖"
+        },
+        {
+          "en": "write",
+          "ru": "писать",
+          "ipa": "/raɪt/",
+          "emoji": "✍️"
+        },
+        {
+          "en": "sing",
+          "ru": "петь",
+          "ipa": "/sɪŋ/",
+          "emoji": "🎤"
+        },
+        {
+          "en": "dance",
+          "ru": "танцевать",
+          "ipa": "/dɑːns/",
+          "emoji": "💃"
+        },
+        {
+          "en": "eat",
+          "ru": "есть, кушать",
+          "ipa": "/iːt/",
+          "emoji": "🍴"
+        },
+        {
+          "en": "drink",
+          "ru": "пить",
+          "ipa": "/drɪŋk/",
+          "emoji": "🥤"
+        },
+        {
+          "en": "sleep",
+          "ru": "спать",
+          "ipa": "/sliːp/",
+          "emoji": "😴"
+        },
+        {
+          "en": "play",
+          "ru": "играть",
+          "ipa": "/pleɪ/",
+          "emoji": "⚽"
+        }
+      ],
+      "grammar": {
+        "title": "Могу или не могу: can / can't",
+        "intro": "Сэр Бруно объявляет турнир! Каждый герей показывает, что он умеет. Волшебное слово can — «могу, умею».",
+        "rules": [
+          "can + действие: I can swim. — Я умею плавать.",
+          "Отрицание: I can't fly. — Я не умею летать. (can't = cannot)",
+          "Вопрос: Can you sing? — Yes, I can. / No, I can't.",
+          "После can и can't глагол никогда не меняется: He can run (не runs!)."
+        ],
+        "examples": [
+          {
+            "en": "I can jump!",
+            "ru": "Я умею прыгать!"
+          },
+          {
+            "en": "The dragon can fly.",
+            "ru": "Дракон умеет летать."
+          },
+          {
+            "en": "Can you dance? — Yes, I can!",
+            "ru": "Ты умеешь танцевать? — Да!"
+          }
+        ],
+        "quiz": [
+          {
+            "q": "A fish ___ swim.",
+            "options": [
+              "can",
+              "can't",
+              "cans"
+            ],
+            "correct": 0,
+            "why": "Рыба умеет плавать: can swim."
+          },
+          {
+            "q": "A cat ___ fly.",
+            "options": [
+              "can't",
+              "can",
+              "cans"
+            ],
+            "correct": 0,
+            "why": "Кот не умеет летать: can't fly."
+          },
+          {
+            "q": "___ you sing? — Yes, I can!",
+            "options": [
+              "Can",
+              "Are",
+              "Do"
+            ],
+            "correct": 0,
+            "why": "Вопрос с can: Can you sing?"
+          },
+          {
+            "q": "The dragon ___ fly and run.",
+            "options": [
+              "can",
+              "cans",
+              "can's"
+            ],
+            "correct": 0,
+            "why": "После he/she/it can не меняется: can."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Турнир героев",
+        "title_en": "The Heroes' Tournament",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🎪",
+                "🎉"
+              ],
+              "bg": "day",
+              "label": "Начало турнира"
+            },
+            "lines": [
+              {
+                "en": "It is a big day — the Heroes' Tournament! All the town is on the square.",
+                "ru": "Большой день — турнир героев! Весь город на площади."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐴",
+                "🏃"
+              ],
+              "bg": "day",
+              "label": "Бег и прыжки"
+            },
+            "lines": [
+              {
+                "en": "The horses run fast. The knights jump high. «I can jump!» — says Tom.",
+                "ru": "Лошади бегут быстро. Рыцари прыгают высоко. «Я умею прыгать!» — говорит Том."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🏊",
+                "🎤",
+                "💃"
+              ],
+              "bg": "sunset",
+              "label": "Песни и танцы"
+            },
+            "lines": [
+              {
+                "en": "Mr. Whiskers sings, the sheep dance. The frog can swim very well!",
+                "ru": "Мистер Уискерс поёт, овцы танцуют. Лягушка очень хорошо плавает!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐉",
+                "🏆",
+                "🎊"
+              ],
+              "bg": "night",
+              "label": "Победитель"
+            },
+            "lines": [
+              {
+                "en": "The little dragon flies over the town! He is the winner! «Hooray!»",
+                "ru": "Маленький дракон летит над городом! Он победитель! «Ура!»"
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "A bird ___ fly.",
+            "options": [
+              "can",
+              "can't",
+              "cans"
+            ],
+            "correct": 0,
+            "ok": "Верно! Птица умеет летать.",
+            "bad": "Птица летает: can fly."
+          },
+          {
+            "q": "I ___ swim, but I can't fly.",
+            "options": [
+              "can",
+              "can't",
+              "cans"
+            ],
+            "correct": 0,
+            "ok": "Верно!",
+            "bad": "Утверждение: can."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "run",
+              "бежать"
+            ],
+            [
+              "swim",
+              "плавать"
+            ],
+            [
+              "sing",
+              "петь"
+            ],
+            [
+              "sleep",
+              "спать"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски «прыгать».",
+            "answer": "jump",
+            "hint": "Начинается на j…"
+          }
+        ]
+      }
+    },
+    {
+      "n": 11,
+      "title_ru": "Мой день",
+      "title_en": "My Day",
+      "words": [
+        {
+          "en": "morning",
+          "ru": "утро",
+          "ipa": "/ˈmɔːnɪŋ/",
+          "emoji": "🌄"
+        },
+        {
+          "en": "day",
+          "ru": "день",
+          "ipa": "/deɪ/",
+          "emoji": "🌤️"
+        },
+        {
+          "en": "evening",
+          "ru": "вечер",
+          "ipa": "/ˈiːvnɪŋ/",
+          "emoji": "🌇"
+        },
+        {
+          "en": "night",
+          "ru": "ночь",
+          "ipa": "/naɪt/",
+          "emoji": "⭐"
+        },
+        {
+          "en": "today",
+          "ru": "сегодня",
+          "ipa": "/təˈdeɪ/",
+          "emoji": "📅"
+        },
+        {
+          "en": "always",
+          "ru": "всегда",
+          "ipa": "/ˈɔːlweɪz/",
+          "emoji": "🔁"
+        },
+        {
+          "en": "breakfast",
+          "ru": "завтрак",
+          "ipa": "/ˈbrekfəst/",
+          "emoji": "🥣"
+        },
+        {
+          "en": "dinner",
+          "ru": "обед, ужин",
+          "ipa": "/ˈdɪnə(r)/",
+          "emoji": "🍝"
+        },
+        {
+          "en": "work",
+          "ru": "работа, работать",
+          "ipa": "/wɜːk/",
+          "emoji": "🔨"
+        },
+        {
+          "en": "home",
+          "ru": "дом, домой",
+          "ipa": "/həʊm/",
+          "emoji": "🏡"
+        },
+        {
+          "en": "happy",
+          "ru": "счастливый, радостный",
+          "ipa": "/ˈhæpi/",
+          "emoji": "😄"
+        },
+        {
+          "en": "tired",
+          "ru": "усталый",
+          "ipa": "/ˈtaɪəd/",
+          "emoji": "🥱"
+        }
+      ],
+      "grammar": {
+        "title": "Простое настоящее: I get up / He gets up",
+        "intro": "Сэр Бруно ведёт дневник стражника. Каждый день одно и то же — Present Simple!",
+        "rules": [
+          "Я/ты/мы: I get up at seven. — Я встаю в семь.",
+          "Он/она: He gets up at six. У he/she к глаголу добавляется -s!",
+          "Время: at seven o'clock — в семь часов.",
+          "Отрицание: I don't work at night. He doesn't work at night."
+        ],
+        "examples": [
+          {
+            "en": "I get up at seven o'clock.",
+            "ru": "Я встаю в семь часов."
+          },
+          {
+            "en": "The cat sleeps in the morning.",
+            "ru": "Кот спит утром."
+          },
+          {
+            "en": "We have dinner in the evening.",
+            "ru": "Мы ужинаем вечером."
+          }
+        ],
+        "quiz": [
+          {
+            "q": "He ___ up at seven.",
+            "options": [
+              "gets",
+              "get",
+              "getes"
+            ],
+            "correct": 0,
+            "why": "He → gets (-s!)."
+          },
+          {
+            "q": "I ___ up at seven.",
+            "options": [
+              "get",
+              "gets",
+              "getting"
+            ],
+            "correct": 0,
+            "why": "I → get (без -s)."
+          },
+          {
+            "q": "The cat ___ in the morning. (спит)",
+            "options": [
+              "sleeps",
+              "sleep",
+              "sleeping"
+            ],
+            "correct": 0,
+            "why": "Кот — he: sleeps."
+          },
+          {
+            "q": "В семь часов:",
+            "options": [
+              "at seven o'clock",
+              "on seven o'clock",
+              "in seven o'clock"
+            ],
+            "correct": 0,
+            "why": "Время с предлогом at: at seven o'clock."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "День стражника Тома",
+        "title_en": "Guard Tom's Day",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🌄",
+                "⏰",
+                "🥣"
+              ],
+              "bg": "dawn",
+              "label": "Раннее утро"
+            },
+            "lines": [
+              {
+                "en": "Tom is a guard now. He always gets up at six o'clock. Yawn!",
+                "ru": "Том теперь стражник. Он всегда встаёт в шесть часов. Зевает!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐕",
+                "🛡️",
+                "🚪"
+              ],
+              "bg": "day",
+              "label": "На посту"
+            },
+            "lines": [
+              {
+                "en": "He says «Good morning!» to the town and opens the gate. Then he works all day.",
+                "ru": "Он говорит «Доброе утро!» городку и открывает ворота. Потом он работает весь день."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🍝",
+                "🥱"
+              ],
+              "bg": "sunset",
+              "label": "Вечер"
+            },
+            "lines": [
+              {
+                "en": "In the evening Tom has dinner with Sir Bruno and the cat. He is tired but happy.",
+                "ru": "Вечером Том ужинает с сэром Бруно и котом. Он устал, но счастлив."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🌌",
+                "😴",
+                "⭐"
+              ],
+              "bg": "night",
+              "label": "Ночь"
+            },
+            "lines": [
+              {
+                "en": "At ten o'clock Tom goes to bed. «Good night, Wordsburg!»",
+                "ru": "В десять часов Том идёт спать. «Доброй ночи, Вордсбург!»"
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "The dog ___ up at six.",
+            "options": [
+              "gets",
+              "get",
+              "getes"
+            ],
+            "correct": 0,
+            "ok": "Верно! Собака — she/he: gets.",
+            "bad": "С he/she добавляем -s: gets."
+          },
+          {
+            "q": "I have breakfast ___ the morning.",
+            "options": [
+              "in",
+              "on",
+              "at"
+            ],
+            "correct": 0,
+            "ok": "Верно! In the morning.",
+            "bad": "Утром — in the morning."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "morning",
+              "утро"
+            ],
+            [
+              "evening",
+              "вечер"
+            ],
+            [
+              "night",
+              "ночь"
+            ],
+            [
+              "breakfast",
+              "завтрак"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски «завтрак».",
+            "answer": "breakfast",
+            "hint": "Начинается на break…"
+          }
+        ]
+      }
+    },
+    {
+      "n": 12,
+      "title_ru": "Итоговый квест: день рождения дракончика",
+      "title_en": "Final Quest: The Dragon's Birthday",
+      "words": [
+        {
+          "en": "town",
+          "ru": "городок",
+          "ipa": "/taʊn/",
+          "emoji": "🏘️"
+        },
+        {
+          "en": "magic",
+          "ru": "магия, волшебный",
+          "ipa": "/ˈmædʒɪk/",
+          "emoji": "✨"
+        },
+        {
+          "en": "word",
+          "ru": "слово",
+          "ipa": "/wɜːd/",
+          "emoji": "💬"
+        },
+        {
+          "en": "book",
+          "ru": "книга",
+          "ipa": "/bʊk/",
+          "emoji": "📚"
+        },
+        {
+          "en": "hero",
+          "ru": "герой",
+          "ipa": "/ˈhɪərəʊ/",
+          "emoji": "🦸"
+        },
+        {
+          "en": "treasure",
+          "ru": "сокровище",
+          "ipa": "/ˈtreʒə(r)/",
+          "emoji": "💎"
+        },
+        {
+          "en": "together",
+          "ru": "вместе",
+          "ipa": "/təˈɡeðə(r)/",
+          "emoji": "🤲"
+        },
+        {
+          "en": "party",
+          "ru": "праздник, вечеринка",
+          "ipa": "/ˈpɑːti/",
+          "emoji": "🎉"
+        },
+        {
+          "en": "gift",
+          "ru": "подарок",
+          "ipa": "/ɡɪft/",
+          "emoji": "🎁"
+        },
+        {
+          "en": "candle",
+          "ru": "свеча",
+          "ipa": "/ˈkændl/",
+          "emoji": "🕯️"
+        },
+        {
+          "en": "happy",
+          "ru": "счастливый",
+          "ipa": "/ˈhæpi/",
+          "emoji": "😄"
+        },
+        {
+          "en": "friend",
+          "ru": "друг",
+          "ipa": "/frend/",
+          "emoji": "🤝"
+        }
+      ],
+      "grammar": {
+        "title": "Итоговое повторение: все заклинания курса",
+        "intro": "Сэр Бруно собирает всех героев: «Проверим, как ты запомнил наши заклинания: to be, have got, can, there is/are, like!»",
+        "rules": [
+          "to be: I am, you are, he/she/it is.",
+          "have got: I have got a friend.",
+          "can: The dragon can fly!",
+          "there is / there are: There are twelve candles on the cake!",
+          "like: Dragons like cakes."
+        ],
+        "examples": [
+          {
+            "en": "I am a hero. You are my friend.",
+            "ru": "Я герой. Ты мой друг."
+          },
+          {
+            "en": "We have got a magic town.",
+            "ru": "У нас есть волшебный городок."
+          },
+          {
+            "en": "There is a party in Wordsburg today!",
+            "ru": "Сегодня в Вордсбурге праздник!"
+          }
+        ],
+        "quiz": [
+          {
+            "q": "We ___ friends.",
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correct": 0,
+            "why": "We → are."
+          },
+          {
+            "q": "The dragon ___ got a gift.",
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correct": 0,
+            "why": "He → has got (у have тоже есть -s!)."
+          },
+          {
+            "q": "___ twelve candles on the cake.",
+            "options": [
+              "There are",
+              "There is",
+              "It is"
+            ],
+            "correct": 0,
+            "why": "Много свечей — there are."
+          },
+          {
+            "q": "Dragons ___ cakes.",
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "correct": 0,
+            "why": "Dragons — они (мн.ч.) → like без -s."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "День рождения дракончика",
+        "title_en": "The Dragon's Birthday",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🎉",
+                "🐉",
+                "🏘️"
+              ],
+              "bg": "day",
+              "label": "Утро праздника"
+            },
+            "lines": [
+              {
+                "en": "Today is the little dragon's birthday! He is one year old now.",
+                "ru": "Сегодня день рождения маленького дракона! ему исполнился один год."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐱",
+                "🎶",
+                "🏛️"
+              ],
+              "bg": "day",
+              "label": "Подготовка"
+            },
+            "lines": [
+              {
+                "en": "Mr. Whiskers sings on the square. The town has got a secret — a big party!",
+                "ru": "Мистер Уискерс поёт на площади. У городка есть секрет — большой праздник!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🍰",
+                "🕯️",
+                "💎"
+              ],
+              "bg": "sunset",
+              "label": "Торт и подарки"
+            },
+            "lines": [
+              {
+                "en": "Look! There are twelve candles on the cake! The dragon's gift is the book of words.",
+                "ru": "Смотрите! На торте двенадцать свечей! Подарок дракона — книга слов."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐋",
+                "📖",
+                "⭐"
+              ],
+              "bg": "night",
+              "label": "История кита"
+            },
+            "lines": [
+              {
+                "en": "In the evening wise Oceanus the whale tells a story about a hero — about you!",
+                "ru": "Вечером мудрый кит Океанус рассказывает историю о герое — о тебе!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "✨",
+                "🤝",
+                "🎆"
+              ],
+              "bg": "night",
+              "label": "Финал"
+            },
+            "lines": [
+              {
+                "en": "«You know many words now. You can read, sing and speak English!» — says the whale.",
+                "ru": "«Теперь ты знаешь много слов. Ты умеешь читать, петь и говорить по-английски!» — говорит кит."
+              },
+              {
+                "en": "The friends are together. The magic is in your heart. The end!",
+                "ru": "Друзья вместе. Магия в твоём сердце. Конец!"
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "I ___ a hero!",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correct": 0,
+            "ok": "Верно! I am.",
+            "bad": "С I — am."
+          },
+          {
+            "q": "The cat ___ got a book.",
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correct": 0,
+            "ok": "Верно! Кот — he: has got.",
+            "bad": "He/she/it → has got."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "magic",
+              "магия"
+            ],
+            [
+              "hero",
+              "герой"
+            ],
+            [
+              "treasure",
+              "сокровище"
+            ],
+            [
+              "party",
+              "праздник"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски «друг».",
+            "answer": "friend",
+            "hint": "Начинается на fr…"
+          }
+        ]
+      }
+    }
+  ]
+}

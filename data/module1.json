@@ -1,0 +1,264 @@
+{
+  "id": 1,
+  "title_ru": "Модуль 1. Добро пожаловать в Вордсбург",
+  "title_en": "Module 1. Welcome to Wordsburg",
+  "lessons": [
+    {
+      "n": 1,
+      "title_ru": "Приветствия и знакомство",
+      "title_en": "Greetings",
+      "words": [
+        {"en": "hello", "ru": "здравствуйте, привет", "ipa": "/həˈləʊ/", "emoji": "👋"},
+        {"en": "hi", "ru": "привет (дружески)", "ipa": "/haɪ/", "emoji": "🙋"},
+        {"en": "goodbye", "ru": "до свидания", "ipa": "/ˌɡʊdˈbaɪ/", "emoji": "🚉"},
+        {"en": "bye", "ru": "пока", "ipa": "/baɪ/", "emoji": "🚶"},
+        {"en": "good morning", "ru": "доброе утро", "ipa": "/ɡʊd ˈmɔːnɪŋ/", "emoji": "🌞"},
+        {"en": "good afternoon", "ru": "добрый день", "ipa": "/ɡʊd ˌɑːftəˈnuːn/", "emoji": "🕛"},
+        {"en": "good evening", "ru": "добрый вечер", "ipa": "/ɡʊd ˈiːvnɪŋ/", "emoji": "🌆"},
+        {"en": "good night", "ru": "доброй ночи", "ipa": "/ɡʊd naɪt/", "emoji": "🌃"},
+        {"en": "please", "ru": "пожалуйста", "ipa": "/pliːz/", "emoji": "🙏"},
+        {"en": "thank you", "ru": "спасибо", "ipa": "/ˈθæŋk juː/", "emoji": "💐"},
+        {"en": "sorry", "ru": "извините", "ipa": "/ˈsɒri/", "emoji": "😔"},
+        {"en": "yes", "ru": "да", "ipa": "/jes/", "emoji": "✅"},
+        {"en": "no", "ru": "нет", "ipa": "/nəʊ/", "emoji": "❌"},
+        {"en": "OK", "ru": "хорошо, ладно", "ipa": "/ˌəʊˈkeɪ/", "emoji": "👌"}
+      ],
+      "grammar": {
+        "title": "Глагол to be: I am / You are",
+        "intro": "Сэр Бруно говорит: «Рыцарь должен знать, кто он! В английском языке есть волшебное слово-связка to be (быть). Оно связывает «я» и то, кем ты являешься».",
+        "rules": [
+          "I am — я есть (я — кто-то/что-то): I am Tom. — Я Том.",
+          "You are — ты есть / вы есть: You are my friend. — Ты мой друг.",
+          "My name is … — Меня зовут …: My name is Anna.",
+          "Вопрос «Как тебя зовут?»: What is your name? — What's your name?",
+          "Краткая форма: I am = I'm, You are = You're, What is = What's."
+        ],
+        "examples": [
+          {"en": "I am Tom.", "ru": "Я — Том."},
+          {"en": "You are my friend.", "ru": "Ты — мой друг."},
+          {"en": "My name is Sir Bruno.", "ru": "Меня зовут сэр Бруно."},
+          {"en": "What is your name?", "ru": "Как тебя зовут?"}
+        ],
+        "quiz": [
+          {"q": "I ___ Tom.", "options": ["am", "is", "are"], "correct": 0, "why": "С «I» всегда используем am: I am."},
+          {"q": "You ___ my friend.", "options": ["am", "is", "are"], "correct": 2, "why": "С «you» используем are: You are."},
+          {"q": "My name ___ Whiskers.", "options": ["am", "is", "are"], "correct": 1, "why": "Со словами «my name» используем is: My name is."},
+          {"q": "___ your name? — Anna.", "options": ["What is", "Who is", "Where is"], "correct": 0, "why": "Спрашиваем имя: What is your name?"}
+        ]
+      },
+      "story": {
+        "title_ru": "Первый день в Вордсбурге",
+        "title_en": "The First Day in Wordsburg",
+        "parts": [
+          {"scene": {"emoji": ["🚶", "🌲", "🌅"], "bg": "dawn", "label": "Утро у лесной дороги"},
+           "lines": [
+             {"en": "My name is Tom. I am a traveller.", "ru": "Меня зовут Том. Я путешественник."},
+             {"en": "I see a little town. The town is magic!", "ru": "Я вижу маленький городок. Городок волшебный!"}
+           ]},
+          {"scene": {"emoji": ["🏰", "🚪"], "bg": "day", "label": "Ворота Вордсбурга"},
+           "lines": [
+             {"en": "The guard says: «Hello! Welcome to Wordsburg!»", "ru": "Стражник говорит: «Здравствуйте! Добро пожаловать в Вордсбург!»"},
+             {"en": "Tom says: «Hi! My name is Tom.»", "ru": "Том говорит: «Привет! Меня зовут Том.»"}
+           ]},
+          {"scene": {"emoji": ["🐱", "🎶"], "bg": "day", "label": "Кот на площади"},
+           "lines": [
+             {"en": "A cat with a lute says: «Good afternoon! I am Mr. Whiskers. I know many words!»", "ru": "Кот с лютней говорит: «Добрый день! Я мистер Уискерс. Я знаю много слов!»"}
+           ]},
+          {"scene": {"emoji": ["🌙", "🐕"], "bg": "night", "label": "Вечер в таверне"},
+           "lines": [
+             {"en": "In the evening a bulldog says: «Good night, Tom! You are our friend now.»", "ru": "Вечером бульдог говорит: «Доброй ночи, Том! Теперь ты наш друг.»"},
+             {"en": "Tom is happy. He says: «Thank you, my friends!»", "ru": "Том рад. Он говорит: «Спасибо вам, мои друзья!»"}
+           ]}
+        ]
+      },
+      "test": {
+        "choice": [
+          {"q": "Как сказать по-английски «привет»?", "options": ["hello", "goodbye", "sorry"], "correct": 0, "ok": "Верно! Hello — привет.", "bad": "Не совсем. Правильный ответ: hello — привет."},
+          {"q": "I ___ Anna.", "options": ["am", "is", "are"], "correct": 0, "ok": "Верно! С «I» всегда am.", "bad": "Нет, с «I» используем am: I am Anna."}
+        ],
+        "matching": {"pairs": [["hello", "привет"], ["goodbye", "до свидания"], ["thank you", "спасибо"], ["please", "пожалуйста"]]},
+        "string": [
+          {"q": "Напишите по-английски слово «спасибо».", "answer": "thank you", "hint": "Два слова, первое начинается на th…"}
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "title_ru": "Волшебная азбука",
+      "title_en": "The Magic Alphabet",
+      "letters": [
+        {"letter": "A", "word": "apple", "ru": "яблоко", "emoji": "🍎"},
+        {"letter": "B", "word": "bee", "ru": "пчела", "emoji": "🐝"},
+        {"letter": "C", "word": "cat", "ru": "кот", "emoji": "🐱"},
+        {"letter": "D", "word": "dog", "ru": "собака", "emoji": "🐶"},
+        {"letter": "E", "word": "egg", "ru": "яйцо", "emoji": "🥚"},
+        {"letter": "F", "word": "fish", "ru": "рыба", "emoji": "🐟"},
+        {"letter": "G", "word": "girl", "ru": "девочка", "emoji": "👧"},
+        {"letter": "H", "word": "house", "ru": "дом", "emoji": "🏠"},
+        {"letter": "I", "word": "ice", "ru": "лёд", "emoji": "🧊"},
+        {"letter": "J", "word": "jam", "ru": "джем", "emoji": "🥫"},
+        {"letter": "K", "word": "key", "ru": "ключ", "emoji": "🔑"},
+        {"letter": "L", "word": "lion", "ru": "лев", "emoji": "🦁"},
+        {"letter": "M", "word": "moon", "ru": "луна", "emoji": "🌙"},
+        {"letter": "N", "word": "nose", "ru": "нос", "emoji": "👃"},
+        {"letter": "O", "word": "orange", "ru": "апельсин", "emoji": "🍊"},
+        {"letter": "P", "word": "pen", "ru": "ручка", "emoji": "✏️"},
+        {"letter": "Q", "word": "queen", "ru": "королева", "emoji": "👑"},
+        {"letter": "R", "word": "rainbow", "ru": "радуга", "emoji": "🌈"},
+        {"letter": "S", "word": "sun", "ru": "солнце", "emoji": "☀️"},
+        {"letter": "T", "word": "tree", "ru": "дерево", "emoji": "🌳"},
+        {"letter": "U", "word": "umbrella", "ru": "зонт", "emoji": "☂️"},
+        {"letter": "V", "word": "violin", "ru": "скрипка", "emoji": "🎻"},
+        {"letter": "W", "word": "water", "ru": "вода", "emoji": "💧"},
+        {"letter": "X", "word": "X-ray", "ru": "рентген", "emoji": "🦴"},
+        {"letter": "Y", "word": "yellow", "ru": "жёлтый", "emoji": "💛"},
+        {"letter": "Z", "word": "zebra", "ru": "зебра", "emoji": "🦓"}
+      ],
+      "words": [
+        {"en": "apple", "ru": "яблоко", "ipa": "/ˈæpl/", "emoji": "🍎"},
+        {"en": "bee", "ru": "пчела", "ipa": "/biː/", "emoji": "🐝"},
+        {"en": "cat", "ru": "кот", "ipa": "/kæt/", "emoji": "🐱"},
+        {"en": "dog", "ru": "собака", "ipa": "/dɒɡ/", "emoji": "🐶"},
+        {"en": "egg", "ru": "яйцо", "ipa": "/eɡ/", "emoji": "🥚"}
+      ],
+      "grammar": {
+        "title": "Артикли a / an",
+        "intro": "Сэр Бруно объясняет: «Перед предметом англичане всегда ставят маленькое слово-щит: a или an. Это неопределённый артикль — „какой-то один предмет“».",
+        "rules": [
+          "a ставим перед согласным звуком: a cat, a dog, a pen.",
+          "an ставим перед гласным звуком: an apple, an egg, an orange.",
+          "Артикль — это щит существительного: без него рыцарь-слово выходит на бой без доспехов!",
+          "Важно слушать ЗВУК, а не букву: an hour (час) — звук гласный."
+        ],
+        "examples": [
+          {"en": "It is a cat.", "ru": "Это кот."},
+          {"en": "It is an apple.", "ru": "Это яблоко."},
+          {"en": "I see a dog and an egg.", "ru": "Я вижу собаку и яйцо."}
+        ],
+        "quiz": [
+          {"q": "It is ___ apple.", "options": ["a", "an", "the"], "correct": 1, "why": "Apple начинается с гласного звука — an apple."},
+          {"q": "It is ___ dog.", "options": ["a", "an", "—"], "correct": 0, "why": "Dog начинается с согласного звука — a dog."},
+          {"q": "I see ___ egg.", "options": ["a", "an", "am"], "correct": 1, "why": "Egg — гласный звук: an egg."},
+          {"q": "I see ___ bee.", "options": ["a", "an", "is"], "correct": 0, "why": "Bee — согласный звук [b]: a bee."}
+        ]
+      },
+      "story": {
+        "title_ru": "Волшебная азбука",
+        "title_en": "The Magic Alphabet",
+        "parts": [
+          {"scene": {"emoji": ["📚", "🕯️"], "bg": "castle", "label": "Библиотека башни"},
+           "lines": [
+             {"en": "Tom is in the tower. He sees a big magic book.", "ru": "Том в башне. Он видит большую волшебную книгу."},
+             {"en": "The book says: «Hello! I am the Alphabet. I am A, B, C…»", "ru": "Книга говорит: «Здравствуй! Я — Алфавит. Я — A, B, C…»"}
+           ]},
+          {"scene": {"emoji": ["✨", "🅰️", "🍎"], "bg": "castle", "label": "Буквы оживают"},
+           "lines": [
+             {"en": "The letters jump out of the book! A is for apple. B is for bee. C is for cat.", "ru": "Буквы выпрыгивают из книги! A — это apple. B — это bee. C — это cat."}
+           ]},
+          {"scene": {"emoji": ["🐱", "🎉"], "bg": "day", "label": "Игра в буквы"},
+           "lines": [
+             {"en": "Mr. Whiskers sings: «A is an apple, B is a bee, C is a cat — look at me!»", "ru": "Мистер Уискерс поёт: «A — яблоко, B — пчела, C — кот — посмотрите на меня!»"},
+             {"en": "Tom says the letters. It is easy and fun!", "ru": "Том называет буквы. Это легко и весело!"}
+           ]},
+          {"scene": {"emoji": ["📖", "🌙"], "bg": "night", "label": "Книга засыпает"},
+           "lines": [
+             {"en": "«Good night, Alphabet!» — says Tom. The letters go home to the book.", "ru": "«Доброй ночи, Алфавит!» — говорит Том. Буквы идут домой, в книгу."}
+           ]}
+        ]
+      },
+      "test": {
+        "choice": [
+          {"q": "It is ___ orange.", "options": ["a", "an"], "correct": 1, "ok": "Верно! Orange — гласный звук, значит an orange.", "bad": "Нет: orange начинается с гласного звука — an orange."},
+          {"q": "С какой буквы начинается слово «bee» (пчела)?", "options": ["B", "D", "P"], "correct": 0, "ok": "Верно! B — bee.", "bad": "Пчела по-английски — bee, начинается с B."}
+        ],
+        "matching": {"pairs": [["A", "apple"], ["B", "bee"], ["C", "cat"], ["D", "dog"]]},
+        "string": [
+          {"q": "Напишите по-английски слово «яблоко».", "answer": "apple", "hint": "Начинается на a…"}
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "title_ru": "Числа 1–20",
+      "title_en": "Numbers 1–20",
+      "words": [
+        {"en": "one", "ru": "один", "ipa": "/wʌn/", "num": 1},
+        {"en": "two", "ru": "два", "ipa": "/tuː/", "num": 2},
+        {"en": "three", "ru": "три", "ipa": "/θriː/", "num": 3},
+        {"en": "four", "ru": "четыре", "ipa": "/fɔː(r)/", "num": 4},
+        {"en": "five", "ru": "пять", "ipa": "/faɪv/", "num": 5},
+        {"en": "six", "ru": "шесть", "ipa": "/sɪks/", "num": 6},
+        {"en": "seven", "ru": "семь", "ipa": "/ˈsevn/", "num": 7},
+        {"en": "eight", "ru": "восемь", "ipa": "/eɪt/", "num": 8},
+        {"en": "nine", "ru": "девять", "ipa": "/naɪn/", "num": 9},
+        {"en": "ten", "ru": "десять", "ipa": "/ten/", "num": 10},
+        {"en": "eleven", "ru": "одиннадцать", "ipa": "/ɪˈlevn/", "num": 11},
+        {"en": "twelve", "ru": "двенадцать", "ipa": "/twelv/", "num": 12},
+        {"en": "thirteen", "ru": "тринадцать", "ipa": "/ˌθɜːˈtiːn/", "num": 13},
+        {"en": "fourteen", "ru": "четырнадцать", "ipa": "/ˌfɔːˈtiːn/", "num": 14},
+        {"en": "fifteen", "ru": "пятнадцать", "ipa": "/ˌfɪfˈtiːn/", "num": 15},
+        {"en": "sixteen", "ru": "шестнадцать", "ipa": "/ˌsɪkˈstiːn/", "num": 16},
+        {"en": "seventeen", "ru": "семнадцать", "ipa": "/ˌsevnˈtiːn/", "num": 17},
+        {"en": "eighteen", "ru": "восемнадцать", "ipa": "/ˌeɪˈtiːn/", "num": 18},
+        {"en": "nineteen", "ru": "девятнадцать", "ipa": "/ˌnaɪnˈtiːn/", "num": 19},
+        {"en": "twenty", "ru": "двадцать", "ipa": "/ˈtwenti/", "num": 20}
+      ],
+      "grammar": {
+        "title": "Вопросы How…? и возраст",
+        "intro": "Сэр Бруно считает овец перед сном и учится спрашивать возраст. В английском «сколько лет» спрашивают буквально «how old — как стар»: How old are you?",
+        "rules": [
+          "How old are you? — Сколько тебе лет?",
+          "Отвечаем глаголом be: I am seven. — Мне семь (я есть семь).",
+          "How — как/сколько, What — что/какой. Вопросительное слово стоит в начале.",
+          "Числа перед существительным: two cats, ten books."
+        ],
+        "examples": [
+          {"en": "How old are you?", "ru": "Сколько тебе лет?"},
+          {"en": "I am nine.", "ru": "Мне девять лет."},
+          {"en": "I see five cats.", "ru": "Я вижу пять котов."}
+        ],
+        "quiz": [
+          {"q": "___ old are you?", "options": ["How", "What", "Who"], "correct": 0, "why": "Возраст спрашиваем: How old are you?"},
+          {"q": "I am ___ . (мне 8)", "options": ["eight", "eighteen", "eighty"], "correct": 0, "why": "Восемь — eight. Внимание: eighteen — 18!"},
+          {"q": "I see three ___ .", "options": ["dog", "dogs", "doges"], "correct": 1, "why": "После числа больше 1 существительное во множественном числе: three dogs."},
+          {"q": "Выберите число 15.", "options": ["fifteen", "fifty", "five"], "correct": 0, "why": "15 — fifteen, 50 — fifty, 5 — five."}
+        ]
+      },
+      "story": {
+        "title_ru": "Счёт овец у привратника",
+        "title_en": "The Guard Counts Sheep",
+        "parts": [
+          {"scene": {"emoji": ["🐕", "🌙", "🛏️"], "bg": "night", "label": "Ночь у ворот"},
+           "lines": [
+             {"en": "It is night. Sir Bruno is in bed. But he can not sleep!", "ru": "Ночь. Сэр Бруно в кровати. Но он не может уснуть!"}
+           ]},
+          {"scene": {"emoji": ["🐑", "🪵"], "bg": "night", "label": "Овцы через забор"},
+           "lines": [
+             {"en": "He counts sheep: one, two, three, four, five…", "ru": "Он считает овец: один, два, три, четыре, пять…"},
+             {"en": "Six, seven, eight, nine, ten… The sheep jump over a fence.", "ru": "Шесть, семь, восемь, девять, десять… Овцы прыгают через забор."}
+           ]},
+          {"scene": {"emoji": ["🐑", "😴"], "bg": "night", "label": "Сладкий сон"},
+           "lines": [
+             {"en": "Eleven, twelve, thirteen… Now Sir Bruno is very sleepy.", "ru": "Одиннадцать, двенадцать, тринадцать… Теперь сэр Бруно очень сонный."},
+             {"en": "Fourteen, fifteen… Zzz. He sleeps. Good night, Sir Bruno!", "ru": "Четырнадцать, пятнадцать… Zzz. Он спит. Доброй ночи, сэр Бруно!"}
+           ]},
+          {"scene": {"emoji": ["🌅", "🐕"], "bg": "dawn", "label": "Утро"},
+           "lines": [
+             {"en": "In the morning the guard asks: «How old are you, little sheep?»", "ru": "Утром привратник спрашивает: «Сколько тебе лет, маленькая овечка?»"},
+             {"en": "The sheep says: «I am two!» And the town laughs.", "ru": "Овечка говорит: «Мне два!» И весь город смеётся."}
+           ]}
+        ]
+      },
+      "test": {
+        "choice": [
+          {"q": "How ___ are you? — I am eight.", "options": ["old", "many", "name"], "correct": 0, "ok": "Верно! How old are you?", "bad": "Возраст спрашивают: How old are you?"},
+          {"q": "Какое число написано словом «twelve»?", "options": ["12", "20", "2"], "correct": 0, "ok": "Верно! Twelve — 12.", "bad": "Twelve — это 12. Двадцать — twenty, два — two."}
+        ],
+        "matching": {"pairs": [["one", "1"], ["five", "5"], ["ten", "10"], ["twelve", "12"]]},
+        "string": [
+          {"q": "Напишите по-английски слово «семь».", "answer": "seven", "hint": "Начинается на s…"}
+        ]
+      }
+    }
+  ]
+}

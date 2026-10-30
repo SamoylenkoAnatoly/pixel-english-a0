@@ -1,0 +1,25 @@
+{
+  "town": "Wordsburg",
+  "town_ru": "Вордсбург",
+  "course_title": "Английский с нуля: Волшебный Вордсбург",
+  "characters": {
+    "bulldog": {"name": "Сэр Бруно", "role": "Бульдог-рыцарь, хранитель грамматики", "asset": "bulldog.png"},
+    "cat": {"name": "Мистер Уискерс", "role": "Кот-бард, учитель слов и произношения", "asset": "cat.png"},
+    "whale": {"name": "Кит Океанус", "role": "Мудрый кит, рассказчик историй", "asset": "whale.png"}
+  },
+  "map_size": [160, 96],
+  "map_spots": {
+    "1": {"x": 16, "y": 66, "kind": "gate"},
+    "2": {"x": 34, "y": 46, "kind": "library"},
+    "3": {"x": 20, "y": 28, "kind": "tower"},
+    "4": {"x": 66, "y": 62, "kind": "stall"},
+    "5": {"x": 84, "y": 68, "kind": "tavern"},
+    "6": {"x": 58, "y": 46, "kind": "bakery"},
+    "7": {"x": 108, "y": 66, "kind": "house"},
+    "8": {"x": 128, "y": 54, "kind": "roof"},
+    "9": {"x": 100, "y": 40, "kind": "bridge"},
+    "10": {"x": 140, "y": 30, "kind": "arena"},
+    "11": {"x": 84, "y": 26, "kind": "clock"},
+    "12": {"x": 56, "y": 16, "kind": "castle"}
+  }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Урок 2: Волшебная азбука — Слова</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a1428;--panel:#2a2142;--panel2:#241c3a;--gold:#d4af37;--gold2:#f0d060;
+--text:#f0e8d8;--dim:#b8a8c8;--red:#c05050;--green:#5cb870;--blue:#5c8ad4;--cat:#e2943e;--dog:#c86a50;--whale:#5c8ad4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.5;padding:14px}
+.wrap{max-width:960px;margin:0 auto}
+.px{font-family:'Press Start 2P','Segoe UI',monospace}
+header.top{display:flex;gap:14px;align-items:center;background:var(--panel);border:3px solid var(--gold);
+border-radius:10px;padding:12px 16px;margin-bottom:12px;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+header.top img.char{width:84px;height:84px;image-rendering:pixelated;flex-shrink:0}
+.bubble{background:var(--panel2);border:2px solid var(--dim);border-radius:10px;padding:10px 14px;position:relative;flex:1}
+.bubble:before{content:'';position:absolute;left:-12px;top:50%;transform:translateY(-50%);
+border:6px solid transparent;border-right-color:var(--dim)}
+.tt{font-size:13px;line-height:1.6;color:var(--gold2);margin-bottom:6px}
+.tt .sub{display:block;font-size:9px;color:var(--dim);margin-top:5px}
+nav.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+nav.tabs a{color:var(--text);text-decoration:none;background:var(--panel);border:2px solid var(--dim);
+border-radius:8px;padding:8px 12px;font-size:9px}
+nav.tabs a.on{background:var(--gold);color:#241c3a;border-color:var(--gold2)}
+nav.tabs a:hover{border-color:var(--gold)}
+.panel{background:var(--panel);border:2px solid #4a3c68;border-radius:10px;padding:14px;margin-bottom:14px}
+h2.sec{font-size:11px;color:var(--gold2);margin-bottom:10px;letter-spacing:1px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{background:var(--panel2);border:2px solid #4a3c68;border-radius:10px;padding:10px;text-align:center}
+.card img{width:96px;height:96px;image-rendering:pixelated;border-radius:6px}
+.card .en{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--gold2);margin:8px 0 6px;word-break:break-word}
+.card .ipa{color:var(--dim);font-size:12px}
+.card .ru{font-size:13px;margin-top:4px}
+.btn{cursor:pointer;background:var(--gold);color:#241c3a;border:none;border-radius:8px;padding:8px 14px;
+font-family:'Press Start 2P',monospace;font-size:10px;box-shadow:0 3px 0 #8a6d1c}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.btn.ghost{background:var(--panel2);color:var(--text);box-shadow:0 3px 0 #17112a;border:2px solid var(--dim)}
+.snd{cursor:pointer;background:none;border:none;font-size:20px;line-height:1;margin-left:4px}
+.rules li{margin:8px 0 8px 18px}
+.rules b{color:var(--gold2)}
+.ex{background:var(--panel2);border-left:4px solid var(--gold);border-radius:6px;padding:8px 12px;margin:8px 0;
+display:flex;justify-content:space-between;gap:10px;align-items:center}
+.ex .en{font-family:'Press Start 2P',monospace;font-size:10px;color:#fff}
+.ex .ru{color:var(--dim);font-size:13px;text-align:right}
+.quiz-q{margin:14px 0;padding:12px;background:var(--panel2);border-radius:8px}
+.quiz-q .q{margin-bottom:10px;font-size:14px}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 12px;background:var(--panel);
+color:var(--text);border:2px solid var(--dim);border-radius:8px;cursor:pointer;font-size:14px}
+.opt:hover{border-color:var(--gold)}
+.opt.ok{border-color:var(--green);background:#1d3324}
+.opt.bad{border-color:var(--red);background:#3a1d22}
+.opt:disabled{cursor:default;opacity:.85}
+.why{margin-top:8px;color:var(--dim);font-size:13px;display:none}
+.why.show{display:block}
+.game-score{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--gold2);margin-bottom:10px}
+.game-img{width:140px;height:140px;image-rendering:pixelated;display:block;margin:0 auto 12px}
+.game-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;max-width:520px;margin:0 auto}
+.scene{margin:16px 0;background:var(--panel2);border:2px solid #4a3c68;border-radius:10px;padding:12px}
+.scene img.pic{width:100%;max-width:640px;display:block;margin:0 auto 10px;border-radius:8px;image-rendering:pixelated}
+.scene .label{font-size:12px;color:var(--dim);text-align:center;margin-bottom:8px}
+.line{background:var(--panel);border-radius:8px;padding:10px 12px;margin:8px 0;display:flex;gap:10px;align-items:flex-start}
+.line .entext{font-family:'Press Start 2P',monospace;font-size:10px;line-height:1.8;flex:1}
+.line .rutext{color:var(--dim);font-size:13px;display:none;margin-top:6px}
+.line.open .rutext{display:block}
+.tr{cursor:pointer;background:var(--panel2);color:var(--dim);border:1px solid var(--dim);border-radius:6px;
+font-size:10px;padding:5px 8px;white-space:nowrap}
+.hub{position:relative;display:inline-block;width:100%}
+.hub img{width:100%;image-rendering:pixelated;border-radius:8px;display:block}
+.spot{position:absolute;transform:translate(-50%,-50%);width:34px;height:34px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;font-family:'Press Start 2P',monospace;font-size:12px;
+color:#fff;text-decoration:none;border:3px solid #f5e8b8;box-shadow:0 0 0 2px #241a38,0 3px 6px rgba(0,0,0,.5);transition:transform .15s}
+.spot:hover{transform:translate(-50%,-50%) scale(1.25);z-index:5}
+.spot.cur{outline:3px solid #fff;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 2px #241a38,0 0 0 0 rgba(255,255,255,.7)}50%{box-shadow:0 0 0 2px #241a38,0 0 0 8px rgba(255,255,255,0)}}
+.chars3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:14px}
+.chars3 .card{display:flex;gap:10px;text-align:left;align-items:center}
+.chars3 img{width:72px;height:72px;flex-shrink:0}
+.chars3 .nm{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--gold2);margin-bottom:6px}
+.chars3 .rl{font-size:12px;color:var(--dim)}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.legend span{font-size:9px;font-family:'Press Start 2P',monospace;padding:6px 8px;border-radius:6px;color:#fff}
+.letters{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.letters .card img{width:72px;height:72px}
+.letters .card .en{font-size:9px}
+.final{font-size:13px;color:var(--gold2);margin-top:10px}
+.stepik{display:inline-block;margin:4px 6px 0 0;font-size:9px}
+@media (max-width:640px){header.top{flex-direction:column;text-align:center}.bubble:before{display:none}
+.cards{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <img class="char" src="assets/chars/cat_idle.png" data-idle="assets/chars/cat_idle.png" data-talk="assets/chars/cat_talk.png" alt="Мистер Уискерс">
+  <div class="bubble">
+    <div class="tt px">Урок 2: Волшебная азбука<span class="sub">Модуль 1. Добро пожаловать в Вордсбург · Слова · Мистер Уискерс — Кот-бард, учитель слов и произношения</span></div>
+    <div style="font-size:13px">Мяу! Я мистер Уискерс, кот-бард! Перед тобой мои волшебные слова. Нажми 🔊 и повтори за мной вслух, а потом поиграй в игру!</div>
+    <div></div>
+  </div>
+</header><nav class="tabs"><a href="index.html?lesson=2">🏰 Карта</a><a href="lesson-02-words.html" class="on">📖 Слова</a><a href="lesson-02-grammar.html">⚔️ Грамматика</a><a href="lesson-02-story.html">🐋 История</a></nav>
+<div class="panel"><h2 class="sec">📖 ВОЛШЕБНЫЕ КАРТОЧКИ</h2><div class="cards"><div class="card"><img src="assets/words/letter_A.png" alt="apple">
+<div class="en">A · apple</div>
+<div class="ru">яблоко<button class="snd" onclick="speak('apple',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_B.png" alt="bee">
+<div class="en">B · bee</div>
+<div class="ru">пчела<button class="snd" onclick="speak('bee',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_C.png" alt="cat">
+<div class="en">C · cat</div>
+<div class="ru">кот<button class="snd" onclick="speak('cat',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_D.png" alt="dog">
+<div class="en">D · dog</div>
+<div class="ru">собака<button class="snd" onclick="speak('dog',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_E.png" alt="egg">
+<div class="en">E · egg</div>
+<div class="ru">яйцо<button class="snd" onclick="speak('egg',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_F.png" alt="fish">
+<div class="en">F · fish</div>
+<div class="ru">рыба<button class="snd" onclick="speak('fish',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_G.png" alt="girl">
+<div class="en">G · girl</div>
+<div class="ru">девочка<button class="snd" onclick="speak('girl',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_H.png" alt="house">
+<div class="en">H · house</div>
+<div class="ru">дом<button class="snd" onclick="speak('house',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_I.png" alt="ice">
+<div class="en">I · ice</div>
+<div class="ru">лёд<button class="snd" onclick="speak('ice',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_J.png" alt="jam">
+<div class="en">J · jam</div>
+<div class="ru">джем<button class="snd" onclick="speak('jam',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_K.png" alt="key">
+<div class="en">K · key</div>
+<div class="ru">ключ<button class="snd" onclick="speak('key',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_L.png" alt="lion">
+<div class="en">L · lion</div>
+<div class="ru">лев<button class="snd" onclick="speak('lion',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_M.png" alt="moon">
+<div class="en">M · moon</div>
+<div class="ru">луна<button class="snd" onclick="speak('moon',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_N.png" alt="nose">
+<div class="en">N · nose</div>
+<div class="ru">нос<button class="snd" onclick="speak('nose',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_O.png" alt="orange">
+<div class="en">O · orange</div>
+<div class="ru">апельсин<button class="snd" onclick="speak('orange',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_P.png" alt="pen">
+<div class="en">P · pen</div>
+<div class="ru">ручка<button class="snd" onclick="speak('pen',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_Q.png" alt="queen">
+<div class="en">Q · queen</div>
+<div class="ru">королева<button class="snd" onclick="speak('queen',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_R.png" alt="rainbow">
+<div class="en">R · rainbow</div>
+<div class="ru">радуга<button class="snd" onclick="speak('rainbow',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_S.png" alt="sun">
+<div class="en">S · sun</div>
+<div class="ru">солнце<button class="snd" onclick="speak('sun',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_T.png" alt="tree">
+<div class="en">T · tree</div>
+<div class="ru">дерево<button class="snd" onclick="speak('tree',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_U.png" alt="umbrella">
+<div class="en">U · umbrella</div>
+<div class="ru">зонт<button class="snd" onclick="speak('umbrella',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_V.png" alt="violin">
+<div class="en">V · violin</div>
+<div class="ru">скрипка<button class="snd" onclick="speak('violin',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_W.png" alt="water">
+<div class="en">W · water</div>
+<div class="ru">вода<button class="snd" onclick="speak('water',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_X.png" alt="X-ray">
+<div class="en">X · X-ray</div>
+<div class="ru">рентген<button class="snd" onclick="speak('X-ray',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_Y.png" alt="yellow">
+<div class="en">Y · yellow</div>
+<div class="ru">жёлтый<button class="snd" onclick="speak('yellow',this)">🔊</button></div></div><div class="card"><img src="assets/words/letter_Z.png" alt="zebra">
+<div class="en">Z · zebra</div>
+<div class="ru">зебра<button class="snd" onclick="speak('zebra',this)">🔊</button></div></div><div class="card"><img src="assets/words/apple.png" alt="apple">
+<div class="en">apple<button class="snd" onclick="speak('apple',this)">🔊</button></div>
+<div class="ipa">/ˈæpl/</div><div class="ru">яблоко</div></div><div class="card"><img src="assets/words/bee.png" alt="bee">
+<div class="en">bee<button class="snd" onclick="speak('bee',this)">🔊</button></div>
+<div class="ipa">/biː/</div><div class="ru">пчела</div></div><div class="card"><img src="assets/words/cat.png" alt="cat">
+<div class="en">cat<button class="snd" onclick="speak('cat',this)">🔊</button></div>
+<div class="ipa">/kæt/</div><div class="ru">кот</div></div><div class="card"><img src="assets/words/dog.png" alt="dog">
+<div class="en">dog<button class="snd" onclick="speak('dog',this)">🔊</button></div>
+<div class="ipa">/dɒɡ/</div><div class="ru">собака</div></div><div class="card"><img src="assets/words/egg.png" alt="egg">
+<div class="en">egg<button class="snd" onclick="speak('egg',this)">🔊</button></div>
+<div class="ipa">/eɡ/</div><div class="ru">яйцо</div></div></div></div>
+<div class="panel"><h2 class="sec">🎮 ИГРА: НАЙДИ СЛОВО</h2>
+<p style="font-size:13px;color:var(--dim);margin-bottom:10px">Кот показывает картинку — выбери правильное английское слово!</p>
+<div id="q"></div><div class="final" id="final"></div>
+<div style="margin-top:12px"><button class="btn ghost" onclick="startGame()">🔄 Играть снова</button></div></div>
+
+</div>
+<script>
+function pickVoice(){
+  var vs = speechSynthesis.getVoices();
+  return vs.filter(function(v){return /^en([-_]|$)/i.test(v.lang) && /US|GB/i.test(v.lang);})[0]
+      || vs.filter(function(v){return /^en/i.test(v.lang);})[0] || null;
+}
+if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = function(){}; }
+function speak(text, btn, rate){
+  if (!('speechSynthesis' in window)) return;
+  var u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = rate || 0.85;
+  var v = pickVoice(); if (v) u.voice = v;
+  var chars = document.querySelectorAll('img.char');
+  chars.forEach(function(im){ im.src = im.getAttribute('data-talk'); });
+  var done = false;
+  function idle(){ if (done) return; done = true;
+    chars.forEach(function(im){ im.src = im.getAttribute('data-idle'); });
+    if (btn) btn.classList.remove('speaking'); }
+  u.onend = idle; u.onerror = idle;
+  if (btn) btn.classList.add('speaking');
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+  setTimeout(idle, 15000);
+}
+function toggleRu(el){ el.closest('.line').classList.toggle('open'); }
+function speakLine(btn, id){
+  var t = document.getElementById(id).getAttribute('data-en');
+  speak(t, btn, 0.8);
+}
+function speakAll(ids, btn){
+  var texts = ids.map(function(i){ return document.getElementById(i).getAttribute('data-en'); });
+  var i = 0;
+  function next(){
+    if (i >= texts.length) return;
+    speak(texts[i], btn, 0.8);
+    i++;
+  }
+  speak(texts[0], btn, 0.8); i = 1;
+  var chk = setInterval(function(){
+    if (!speechSynthesis.speaking){ clearInterval(chk); next(); }
+  }, 300);
+}
+</script>
+<script>
+var WORDS = [{"en": "apple", "img": "apple.png", "ru": "яблоко"}, {"en": "bee", "img": "bee.png", "ru": "пчела"}, {"en": "cat", "img": "cat.png", "ru": "кот"}, {"en": "dog", "img": "dog.png", "ru": "собака"}, {"en": "egg", "img": "egg.png", "ru": "яйцо"}];
+var order = [], idx = 0, score = 0;
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function startGame(){
+  order = shuffle(WORDS).slice(0, 8); idx = 0; score = 0;
+  document.getElementById('final').textContent = '';
+  nextQ();
+}
+function nextQ(){
+  if (idx >= order.length){
+    var msg = score >= 7 ? 'Великолепно! Кот тобой гордится!' : score >= 5 ? 'Хорошо! Повтори карточки и попробуй ещё.' : 'Загляни в карточки и сыграй снова!';
+    document.getElementById('final').textContent = 'Результат: ' + score + ' из ' + order.length + '. ' + msg;
+    return;
+  }
+  var w = order[idx];
+  var wrong = shuffle(WORDS.filter(function(x){ return x.en !== w.en; })).slice(0, 3);
+  var opts = shuffle([w].concat(wrong));
+  var box = document.getElementById('q');
+  var h = '<div class="game-score">Слово ' + (idx + 1) + ' из ' + order.length + ' · Очки: ' + score + '</div>';
+  h += '<img class="game-img" src="assets/words/' + w.img + '" alt="">';
+  h += '<div class="game-opts">' + opts.map(function(o){
+        return '<button class="opt" data-en="' + o.en.replace(/"/g, '&quot;') + '">' + o.en + '</button>';
+      }).join('') + '</div>';
+  box.innerHTML = h;
+  box.querySelectorAll('.opt').forEach(function(b){
+    b.onclick = function(){
+      var ok = b.getAttribute('data-en') === w.en;
+      if (ok){ score++; b.classList.add('ok'); } else {
+        b.classList.add('bad');
+        box.querySelectorAll('.opt').forEach(function(x){ if (x.getAttribute('data-en') === w.en) x.classList.add('ok'); });
+      }
+      speak(w.en);
+      box.querySelectorAll('.opt').forEach(function(x){ x.disabled = true; });
+      idx++;
+      setTimeout(nextQ, 900);
+    };
+  });
+}
+startGame();
+</script>
+</body>
+</html>

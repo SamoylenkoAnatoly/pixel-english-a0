@@ -1,0 +1,850 @@
+{
+  "id": 2,
+  "title_ru": "Модуль 2. Рыночная площадь",
+  "title_en": "Module 2. Market Square",
+  "lessons": [
+    {
+      "n": 4,
+      "title_ru": "Цвета Вордсбурга",
+      "title_en": "Colours",
+      "words": [
+        {
+          "en": "red",
+          "ru": "красный",
+          "ipa": "/red/",
+          "color": "#e04545"
+        },
+        {
+          "en": "blue",
+          "ru": "синий, голубой",
+          "ipa": "/bluː/",
+          "color": "#4a7ddf"
+        },
+        {
+          "en": "green",
+          "ru": "зелёный",
+          "ipa": "/ɡriːn/",
+          "color": "#4ba85c"
+        },
+        {
+          "en": "yellow",
+          "ru": "жёлтый",
+          "ipa": "/ˈjeləʊ/",
+          "color": "#eac94f"
+        },
+        {
+          "en": "orange",
+          "ru": "оранжевый",
+          "ipa": "/ˈɒrɪndʒ/",
+          "color": "#e2883e"
+        },
+        {
+          "en": "purple",
+          "ru": "фиолетовый",
+          "ipa": "/ˈpɜːpl/",
+          "color": "#9a5fd0"
+        },
+        {
+          "en": "pink",
+          "ru": "розовый",
+          "ipa": "/pɪŋk/",
+          "color": "#ef8fb5"
+        },
+        {
+          "en": "brown",
+          "ru": "коричневый",
+          "ipa": "/braʊn/",
+          "color": "#9a6a42"
+        },
+        {
+          "en": "black",
+          "ru": "чёрный",
+          "ipa": "/blæk/",
+          "color": "#34343e"
+        },
+        {
+          "en": "white",
+          "ru": "белый",
+          "ipa": "/waɪt/",
+          "color": "#f4f4f0"
+        },
+        {
+          "en": "grey",
+          "ru": "серый",
+          "ipa": "/ɡreɪ/",
+          "color": "#9aa0a8"
+        },
+        {
+          "en": "gold",
+          "ru": "золотой",
+          "ipa": "/ɡəʊld/",
+          "color": "#e2b33e"
+        }
+      ],
+      "grammar": {
+        "title": "Цвет + предмет: a red apple",
+        "intro": "Сэр Бруно показывает на рыночные прилавки: «В английском цвет стоит ПЕРЕД предметом, как знамя перед рыцарем: a red apple».",
+        "rules": [
+          "Порядок слов: артикль + цвет + предмет: a green tree, an orange orange!",
+          "Вопрос о цвете: What colour is it? — It is red.",
+          "Цвет не меняется: two red apples (у цвета нет -s).",
+          "Прилагательное всегда рядом со своим существительным — не разлучайте их!"
+        ],
+        "examples": [
+          {
+            "en": "It is a red apple.",
+            "ru": "Это красное яблоко."
+          },
+          {
+            "en": "The cat is grey.",
+            "ru": "Кот серый."
+          },
+          {
+            "en": "I see two green trees.",
+            "ru": "Я вижу два зелёных дерева."
+          },
+          {
+            "en": "What colour is the sun? — It is yellow.",
+            "ru": "Какого цвета солнце? — Оно жёлтое."
+          }
+        ],
+        "quiz": [
+          {
+            "q": "Выберите правильный порядок слов (красное яблоко):",
+            "options": [
+              "a red apple",
+              "an apple red",
+              "red a apple"
+            ],
+            "correct": 0,
+            "why": "Артикль + цвет + предмет: a red apple."
+          },
+          {
+            "q": "What colour is the sun? ☀️",
+            "options": [
+              "It is yellow.",
+              "It is blue.",
+              "It is black."
+            ],
+            "correct": 0,
+            "why": "Солнце жёлтое: It is yellow."
+          },
+          {
+            "q": "I see two ___ cats.",
+            "options": [
+              "black",
+              "blacks",
+              "a black"
+            ],
+            "correct": 0,
+            "why": "Цвет не принимает -s: two black cats."
+          },
+          {
+            "q": "Небо (sky) днём…",
+            "options": [
+              "It is blue.",
+              "It is pink.",
+              "It is brown."
+            ],
+            "correct": 0,
+            "why": "Дневное небо голубое: It is blue."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Радужный рынок",
+        "title_en": "The Rainbow Market",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🏪",
+                "🍎"
+              ],
+              "bg": "market",
+              "label": "Утро на рынке"
+            },
+            "lines": [
+              {
+                "en": "It is morning. The market is open! Apples are red. Bananas are yellow.",
+                "ru": "Утро. Рынок открыт! Яблоки красные. Бананы жёлтые."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "✨",
+                "🌈",
+                "🍇"
+              ],
+              "bg": "market",
+              "label": "Волшебный дождь"
+            },
+            "lines": [
+              {
+                "en": "Oh! A magic rain! Now the apples are blue and the milk is green!",
+                "ru": "Ой! Волшебный дождь! Теперь яблоки синие, а молоко зелёное!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐱",
+                "🎨"
+              ],
+              "bg": "market",
+              "label": "Кот-художник"
+            },
+            "lines": [
+              {
+                "en": "Mr. Whiskers says: «Don't cry! I am an artist!»",
+                "ru": "Мистер Уискерс говорит: «Не плачьте! Я художник!»"
+              },
+              {
+                "en": "He paints: red, yellow, green, blue… The market is a rainbow!",
+                "ru": "Он красит: красный, жёлтый, зелёный, синий… Рынок — радуга!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🏆",
+                "😊"
+              ],
+              "bg": "sunset",
+              "label": "Золотой вечер"
+            },
+            "lines": [
+              {
+                "en": "In the evening the sun is gold. «Thank you, Whiskers!» — say the people.",
+                "ru": "Вечером солнце золотое. «Спасибо, Уискерс!» — говорят люди."
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "Какого цвета трава (grass)?",
+            "options": [
+              "It is green.",
+              "It is black.",
+              "It is pink."
+            ],
+            "correct": 0,
+            "ok": "Верно! Трава зелёная — green.",
+            "bad": "Трава зелёная: It is green."
+          },
+          {
+            "q": "Выберите правильный порядок: синяя дверь (door)",
+            "options": [
+              "a blue door",
+              "a door blue",
+              "blue a door"
+            ],
+            "correct": 0,
+            "ok": "Верно! Цвет стоит перед предметом.",
+            "bad": "Артикль + цвет + предмет: a blue door."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "red",
+              "красный"
+            ],
+            [
+              "blue",
+              "синий"
+            ],
+            [
+              "green",
+              "зелёный"
+            ],
+            [
+              "yellow",
+              "жёлтый"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски слово «жёлтый».",
+            "answer": "yellow",
+            "hint": "Начинается на y…"
+          }
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "title_ru": "Еда и напитки",
+      "title_en": "Food and Drinks",
+      "words": [
+        {
+          "en": "apple",
+          "ru": "яблоко",
+          "ipa": "/ˈæpl/",
+          "emoji": "🍎"
+        },
+        {
+          "en": "bread",
+          "ru": "хлеб",
+          "ipa": "/bred/",
+          "emoji": "🍞"
+        },
+        {
+          "en": "cheese",
+          "ru": "сыр",
+          "ipa": "/tʃiːz/",
+          "emoji": "🧀"
+        },
+        {
+          "en": "milk",
+          "ru": "молоко",
+          "ipa": "/mɪlk/",
+          "emoji": "🥛"
+        },
+        {
+          "en": "water",
+          "ru": "вода",
+          "ipa": "/ˈwɔːtə(r)/",
+          "emoji": "💧"
+        },
+        {
+          "en": "tea",
+          "ru": "чай",
+          "ipa": "/tiː/",
+          "emoji": "🍵"
+        },
+        {
+          "en": "egg",
+          "ru": "яйцо",
+          "ipa": "/eɡ/",
+          "emoji": "🥚"
+        },
+        {
+          "en": "fish",
+          "ru": "рыба",
+          "ipa": "/fɪʃ/",
+          "emoji": "🐟"
+        },
+        {
+          "en": "cake",
+          "ru": "торт, пирог",
+          "ipa": "/keɪk/",
+          "emoji": "🍰"
+        },
+        {
+          "en": "honey",
+          "ru": "мёд",
+          "ipa": "/ˈhʌni/",
+          "emoji": "🍯"
+        },
+        {
+          "en": "soup",
+          "ru": "суп",
+          "ipa": "/suːp/",
+          "emoji": "🍲"
+        },
+        {
+          "en": "meat",
+          "ru": "мясо",
+          "ipa": "/miːt/",
+          "emoji": "🥩"
+        }
+      ],
+      "grammar": {
+        "title": "I like / I don't like",
+        "intro": "Сэр Бруно обожает мёд и не любит… нет, он любит всё! Учимся говорить о вкусах.",
+        "rules": [
+          "I like cheese. — Я люблю (мне нравится) сыр.",
+          "Отрицание: I don't like meat. — Я не люблю мясо. (don't = do not)",
+          "Скажем о друге: He likes tea. У he/she добавляем -s к like!",
+          "Вопрос: Do you like cake? — Yes, I do! / No, I don't."
+        ],
+        "examples": [
+          {
+            "en": "I like honey!",
+            "ru": "Я люблю мёд!"
+          },
+          {
+            "en": "I don't like meat.",
+            "ru": "Я не люблю мясо."
+          },
+          {
+            "en": "The cat likes fish.",
+            "ru": "Кот любит рыбу."
+          },
+          {
+            "en": "Do you like tea? — Yes, I do!",
+            "ru": "Ты любишь чай? — Да!"
+          }
+        ],
+        "quiz": [
+          {
+            "q": "I ___ cheese.",
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "correct": 0,
+            "why": "С I — like без -s: I like."
+          },
+          {
+            "q": "The cat ___ fish.",
+            "options": [
+              "like",
+              "likes",
+              "don't like"
+            ],
+            "correct": 1,
+            "why": "С he/she/it (и с котом!) — likes."
+          },
+          {
+            "q": "Я не люблю мясо:",
+            "options": [
+              "I don't like meat.",
+              "I like meat.",
+              "I no like meat."
+            ],
+            "correct": 0,
+            "why": "Отрицание через don't: I don't like meat."
+          },
+          {
+            "q": "Do you like cake?",
+            "options": [
+              "Yes, I do!",
+              "Yes, I like.",
+              "Yes, I am."
+            ],
+            "correct": 0,
+            "why": "Краткий ответ: Yes, I do! / No, I don't."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Пир в таверне",
+        "title_en": "The Feast at the Tavern",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🍺",
+                "🕯️",
+                "🎶"
+              ],
+              "bg": "market",
+              "label": "Вечер в таверне"
+            },
+            "lines": [
+              {
+                "en": "It is evening. The people are in the tavern. It is a big feast!",
+                "ru": "Вечер. Люди в таверне. Большой пир!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🍞",
+                "🧀",
+                "🍲"
+              ],
+              "bg": "market",
+              "label": "Столы ломятся"
+            },
+            "lines": [
+              {
+                "en": "Look! Bread, cheese, soup and meat. Yum!",
+                "ru": "Смотрите! Хлеб, сыр, суп и мясо. Вкуснота!"
+              },
+              {
+                "en": "Tom says: «I like bread and cheese. I don't like meat.»",
+                "ru": "Том говорит: «Я люблю хлеб и сыр. Я не люблю мясо.»"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐱",
+                "🐟",
+                "🎤"
+              ],
+              "bg": "market",
+              "label": "Песня кота"
+            },
+            "lines": [
+              {
+                "en": "Mr. Whiskers sings for his supper: «I am a cat. I like fish and milk!»",
+                "ru": "Мистер Уискерс поёт за свой ужин: «Я кот. Я люблю рыбу и молоко!»"
+              },
+              {
+                "en": "The people say: «Thank you! Here is your fish and your milk!»",
+                "ru": "Люди говорят: «Спасибо! Вот твоя рыба и твоё молоко!»"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🍰",
+                "😊"
+              ],
+              "bg": "night",
+              "label": "Сладкий финал"
+            },
+            "lines": [
+              {
+                "en": "The cook says: «A magic cake for all!» Now the cake is… in Tom's mouth! Ha-ha!",
+                "ru": "Повар говорит: «Волшебный торт для всех!» Теперь торт… во рту у Тома! Ха-ха!"
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "The dog ___ meat.",
+            "options": [
+              "likes",
+              "like",
+              "don't like"
+            ],
+            "correct": 0,
+            "ok": "Верно! Собака — она/он: likes.",
+            "bad": "С he/she/it добавляем -s: likes."
+          },
+          {
+            "q": "Как сказать «Я не люблю суп»?",
+            "options": [
+              "I don't like soup.",
+              "I like soup.",
+              "I no like soup."
+            ],
+            "correct": 0,
+            "ok": "Верно! I don't like soup.",
+            "bad": "Отрицание: I don't like soup."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "bread",
+              "хлеб"
+            ],
+            [
+              "milk",
+              "молоко"
+            ],
+            [
+              "fish",
+              "рыба"
+            ],
+            [
+              "cake",
+              "торт"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски слово «молоко».",
+            "answer": "milk",
+            "hint": "Начинается на m…"
+          }
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "title_ru": "Семья",
+      "title_en": "Family",
+      "words": [
+        {
+          "en": "mother",
+          "ru": "мама",
+          "ipa": "/ˈmʌðə(r)/",
+          "emoji": "👩"
+        },
+        {
+          "en": "father",
+          "ru": "папа",
+          "ipa": "/ˈfɑːðə(r)/",
+          "emoji": "👨"
+        },
+        {
+          "en": "sister",
+          "ru": "сестра",
+          "ipa": "/ˈsɪstə(r)/",
+          "emoji": "👧"
+        },
+        {
+          "en": "brother",
+          "ru": "брат",
+          "ipa": "/ˈbrʌðə(r)/",
+          "emoji": "👦"
+        },
+        {
+          "en": "grandmother",
+          "ru": "бабушка",
+          "ipa": "/ˈɡrænmʌðə(r)/",
+          "emoji": "👵"
+        },
+        {
+          "en": "grandfather",
+          "ru": "дедушка",
+          "ipa": "/ˈɡrænfɑːðə(r)/",
+          "emoji": "👴"
+        },
+        {
+          "en": "family",
+          "ru": "семья",
+          "ipa": "/ˈfæməli/",
+          "emoji": "👪"
+        },
+        {
+          "en": "son",
+          "ru": "сын",
+          "ipa": "/sʌn/",
+          "emoji": "🧑"
+        },
+        {
+          "en": "daughter",
+          "ru": "дочь",
+          "ipa": "/ˈdɔːtə(r)/",
+          "emoji": "🎀"
+        },
+        {
+          "en": "baby",
+          "ru": "малыш, младенец",
+          "ipa": "/ˈbeɪbi/",
+          "emoji": "👶"
+        },
+        {
+          "en": "friend",
+          "ru": "друг",
+          "ipa": "/frend/",
+          "emoji": "🤝"
+        },
+        {
+          "en": "child",
+          "ru": "ребёнок",
+          "ipa": "/tʃaɪld/",
+          "emoji": "🧒"
+        }
+      ],
+      "grammar": {
+        "title": "I have got… (у меня есть)",
+        "intro": "Сэр Бруно гордится своей семьёй и своим гербом: «Чтобы сказать „у меня есть“, используй have got».",
+        "rules": [
+          "I have got a sister. — У меня есть сестра.",
+          "You have got a friend. — У тебя есть друг.",
+          "Отрицание: I haven't got a brother. — У меня нет брата.",
+          "Притяжательные: my — мой, your — твой: my mother, your friend."
+        ],
+        "examples": [
+          {
+            "en": "I have got a big family.",
+            "ru": "У меня есть большая семья."
+          },
+          {
+            "en": "I have got a sister and a brother.",
+            "ru": "У меня есть сестра и брат."
+          },
+          {
+            "en": "My mother is kind.",
+            "ru": "Моя мама добрая."
+          },
+          {
+            "en": "You are my friend!",
+            "ru": "Ты мой друг!"
+          }
+        ],
+        "quiz": [
+          {
+            "q": "I have got two ___ .",
+            "options": [
+              "sisters",
+              "sister",
+              "sister's"
+            ],
+            "correct": 0,
+            "why": "После two — множественное число: sisters."
+          },
+          {
+            "q": "___ mother is Ann. (моя)",
+            "options": [
+              "My",
+              "Me",
+              "I"
+            ],
+            "correct": 0,
+            "why": "Притяжательное местоимение: my mother."
+          },
+          {
+            "q": "У меня есть друг:",
+            "options": [
+              "I have got a friend.",
+              "I am a friend.",
+              "I like a friend."
+            ],
+            "correct": 0,
+            "why": "«У меня есть» — I have got."
+          },
+          {
+            "q": "У меня нет брата:",
+            "options": [
+              "I haven't got a brother.",
+              "I don't got a brother.",
+              "I no have brother."
+            ],
+            "correct": 0,
+            "why": "Отрицание have got: haven't got."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Семья пекаря",
+        "title_en": "The Baker's Family",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "👨‍🍳",
+                "🥖",
+                "🏪"
+              ],
+              "bg": "day",
+              "label": "Пекарня Вордсбурга"
+            },
+            "lines": [
+              {
+                "en": "This is the baker. He has got a big family.",
+                "ru": "Это пекарь. У него большая семья."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "👩",
+                "👧",
+                "👦"
+              ],
+              "bg": "day",
+              "label": "Знакомство"
+            },
+            "lines": [
+              {
+                "en": "His wife is Mary. His daughter is Rosie. His son is Jack.",
+                "ru": "Его жена — Мэри. Его дочь — Рози. Его сын — Джек."
+              },
+              {
+                "en": "«Hello! I am Rosie! I am five!» — says the little girl.",
+                "ru": "«Привет! Я Рози! Мне пять!» — говорит маленькая девочка."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "👵",
+                "👴",
+                "📖"
+              ],
+              "bg": "sunset",
+              "label": "Истории бабушки"
+            },
+            "lines": [
+              {
+                "en": "Grandmother and grandfather live near the bakery.",
+                "ru": "Бабушка и дедушка живут рядом с пекарней."
+              },
+              {
+                "en": "In the evening grandmother tells magic stories about dragons.",
+                "ru": "Вечером бабушка рассказывает волшебные истории о драконах."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "👶",
+                "🎉"
+              ],
+              "bg": "night",
+              "label": "Новый малыш"
+            },
+            "lines": [
+              {
+                "en": "Today the family has got a baby! The baby likes bread. A lot of bread!",
+                "ru": "Сегодня в семье появился малыш! Малыш любит хлеб. Очень много хлеба!"
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "I have got a ___ . (брат)",
+            "options": [
+              "brother",
+              "sister",
+              "mother"
+            ],
+            "correct": 0,
+            "ok": "Верно! Brother — брат.",
+            "bad": "Брат по-английски — brother."
+          },
+          {
+            "q": "___ father is Tom. (мой)",
+            "options": [
+              "My",
+              "Me",
+              "I"
+            ],
+            "correct": 0,
+            "ok": "Верно! My father.",
+            "bad": "Мой — my: my father."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "mother",
+              "мама"
+            ],
+            [
+              "father",
+              "папа"
+            ],
+            [
+              "sister",
+              "сестра"
+            ],
+            [
+              "brother",
+              "брат"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски слово «бабушка».",
+            "answer": "grandmother",
+            "hint": "Начинается на grand…"
+          }
+        ]
+      }
+    }
+  ]
+}

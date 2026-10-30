@@ -1,0 +1,833 @@
+{
+  "id": 3,
+  "title_ru": "Модуль 3. Улицы городка",
+  "title_en": "Module 3. Streets of the Town",
+  "lessons": [
+    {
+      "n": 7,
+      "title_ru": "Мой дом",
+      "title_en": "My Home",
+      "words": [
+        {
+          "en": "house",
+          "ru": "дом",
+          "ipa": "/haʊs/",
+          "emoji": "🏠"
+        },
+        {
+          "en": "room",
+          "ru": "комната",
+          "ipa": "/ruːm/",
+          "emoji": "🛋️"
+        },
+        {
+          "en": "door",
+          "ru": "дверь",
+          "ipa": "/dɔː(r)/",
+          "emoji": "🚪"
+        },
+        {
+          "en": "window",
+          "ru": "окно",
+          "ipa": "/ˈwɪndəʊ/",
+          "draw": "window"
+        },
+        {
+          "en": "table",
+          "ru": "стол",
+          "ipa": "/ˈteɪbl/",
+          "draw": "table"
+        },
+        {
+          "en": "chair",
+          "ru": "стул",
+          "ipa": "/tʃeə(r)/",
+          "emoji": "🪑"
+        },
+        {
+          "en": "bed",
+          "ru": "кровать",
+          "ipa": "/bed/",
+          "emoji": "🛏️"
+        },
+        {
+          "en": "kitchen",
+          "ru": "кухня",
+          "ipa": "/ˈkɪtʃɪn/",
+          "emoji": "🍳"
+        },
+        {
+          "en": "garden",
+          "ru": "сад",
+          "ipa": "/ˈɡɑːdn/",
+          "emoji": "🌷"
+        },
+        {
+          "en": "key",
+          "ru": "ключ",
+          "ipa": "/kiː/",
+          "emoji": "🔑"
+        },
+        {
+          "en": "candle",
+          "ru": "свеча",
+          "ipa": "/ˈkændl/",
+          "emoji": "🕯️"
+        },
+        {
+          "en": "floor",
+          "ru": "пол",
+          "ipa": "/flɔː(r)/",
+          "emoji": "🧹"
+        }
+      ],
+      "grammar": {
+        "title": "There is / There are (есть, находится)",
+        "intro": "Сэр Бруно осматривает дома: «Чтобы сказать „где-что находится“, в английском есть заклинание there is / there are».",
+        "rules": [
+          "There is + один предмет: There is a bed in the room. — В комнате есть кровать.",
+          "There are + много предметов: There are two chairs. — Там два стула.",
+          "Отрицание: There is no table. / There are no candles.",
+          "Кратко: What is in your house? — There is a cat!"
+        ],
+        "examples": [
+          {
+            "en": "There is a key on the table.",
+            "ru": "На столе (есть) ключ."
+          },
+          {
+            "en": "There are three rooms in my house.",
+            "ru": "В моём доме три комнаты."
+          },
+          {
+            "en": "There is no candle here.",
+            "ru": "Здесь нет свечи."
+          }
+        ],
+        "quiz": [
+          {
+            "q": "There ___ a bed in the room.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correct": 0,
+            "why": "Один предмет — there is."
+          },
+          {
+            "q": "There ___ two chairs in the kitchen.",
+            "options": [
+              "are",
+              "is",
+              "be"
+            ],
+            "correct": 0,
+            "why": "Предметов много — there are."
+          },
+          {
+            "q": "There ___ three windows.",
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correct": 0,
+            "why": "Three windows — множественное число: are."
+          },
+          {
+            "q": "В комнате есть свеча:",
+            "options": [
+              "There is a candle in the room.",
+              "There are a candle in the room.",
+              "It is candle in room."
+            ],
+            "correct": 0,
+            "why": "Одна свеча — there is a candle."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Дом с добрым привидением",
+        "title_en": "The House with a Kind Ghost",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🏚️",
+                "🌙"
+              ],
+              "bg": "night",
+              "label": "Странный дом"
+            },
+            "lines": [
+              {
+                "en": "Tom sees an old house. The door is open. «Hello?» says Tom.",
+                "ru": "Том видит старый дом. Дверь открыта. «Есть кто-нибудь?» — говорит Том."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "👻",
+                "🕯️"
+              ],
+              "bg": "night",
+              "label": "Знакомство с привидением"
+            },
+            "lines": [
+              {
+                "en": "Boo! It is a little ghost! «Don't run! I am friendly!»",
+                "ru": "Бу! Это маленькое привидение! «Не убегай! я дружелюбное!»"
+              },
+              {
+                "en": "There are no people in this house. The ghost is alone.",
+                "ru": "В этом доме нет людей. Привидение одно."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🔑",
+                "🧹"
+              ],
+              "bg": "castle",
+              "label": "Поиск ключа"
+            },
+            "lines": [
+              {
+                "en": "«Where is my key?» — says the ghost. They look under the table and under the bed.",
+                "ru": "«Где мой ключ?» — говорит привидение. Они ищут под столом и под кроватью."
+              },
+              {
+                "en": "There it is! On the floor! The ghost is happy!",
+                "ru": "Вот же он! На полу! Привидение довольно!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "👻",
+                "🤝",
+                "🏠"
+              ],
+              "bg": "day",
+              "label": "Новый друг"
+            },
+            "lines": [
+              {
+                "en": "Now the ghost has got a friend. Tom says: «Your home is my home!»",
+                "ru": "Теперь у привидения есть друг. Том говорит: «Твой дом — мой дом!»"
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "There ___ a candle on the table.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correct": 0,
+            "ok": "Верно! Одна свеча — there is.",
+            "bad": "Один предмет — there is."
+          },
+          {
+            "q": "There ___ four rooms in the house.",
+            "options": [
+              "are",
+              "is",
+              "be"
+            ],
+            "correct": 0,
+            "ok": "Верно! There are four rooms.",
+            "bad": "Много предметов — there are."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "house",
+              "дом"
+            ],
+            [
+              "door",
+              "дверь"
+            ],
+            [
+              "window",
+              "окно"
+            ],
+            [
+              "bed",
+              "кровать"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски слово «ключ».",
+            "answer": "key",
+            "hint": "Три буквы, начинается на k…"
+          }
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "title_ru": "Животные Вордсбурга",
+      "title_en": "Animals",
+      "words": [
+        {
+          "en": "cat",
+          "ru": "кот",
+          "ipa": "/kæt/",
+          "emoji": "🐱"
+        },
+        {
+          "en": "dog",
+          "ru": "собака",
+          "ipa": "/dɒɡ/",
+          "emoji": "🐶"
+        },
+        {
+          "en": "horse",
+          "ru": "лошадь",
+          "ipa": "/hɔːs/",
+          "emoji": "🐴"
+        },
+        {
+          "en": "cow",
+          "ru": "корова",
+          "ipa": "/kaʊ/",
+          "emoji": "🐄"
+        },
+        {
+          "en": "sheep",
+          "ru": "овца",
+          "ipa": "/ʃiːp/",
+          "emoji": "🐑"
+        },
+        {
+          "en": "mouse",
+          "ru": "мышь",
+          "ipa": "/maʊs/",
+          "emoji": "🐭"
+        },
+        {
+          "en": "bird",
+          "ru": "птица",
+          "ipa": "/bɜːd/",
+          "emoji": "🐦"
+        },
+        {
+          "en": "fish",
+          "ru": "рыба",
+          "ipa": "/fɪʃ/",
+          "emoji": "🐟"
+        },
+        {
+          "en": "dragon",
+          "ru": "дракон",
+          "ipa": "/ˈdræɡən/",
+          "emoji": "🐉"
+        },
+        {
+          "en": "owl",
+          "ru": "сова",
+          "ipa": "/aʊl/",
+          "emoji": "🦉"
+        },
+        {
+          "en": "fox",
+          "ru": "лиса",
+          "ipa": "/fɒks/",
+          "emoji": "🦊"
+        },
+        {
+          "en": "bear",
+          "ru": "медведь",
+          "ipa": "/beə(r)/",
+          "emoji": "🐻"
+        }
+      ],
+      "grammar": {
+        "title": "Множественное число: -s и -es",
+        "intro": "Сэр Бруно пересчитывает зверей в зверинце городка. Один кот — два кота. Как сказать это по-английски?",
+        "rules": [
+          "Обычно добавляем -s: a cat → two cats, a dog → three dogs.",
+          "После -s, -ss, -sh, -ch, -x, -o добавляем -es: a fox → two foxes.",
+          "Неправильные слова-волшебники: a mouse → mice, a sheep → sheep (не меняется!).",
+          "Внимание: a fish → fish (одна рыба и много рыб — fish)."
+        ],
+        "examples": [
+          {
+            "en": "I see two cats and three dogs.",
+            "ru": "Я вижу двух котов и трёх собак."
+          },
+          {
+            "en": "There are five foxes in the forest.",
+            "ru": "В лесу пять лис."
+          },
+          {
+            "en": "One mouse — many mice!",
+            "ru": "Одна мышь — много мышей!"
+          }
+        ],
+        "quiz": [
+          {
+            "q": "One cat — two ___ .",
+            "options": [
+              "cats",
+              "cates",
+              "cat"
+            ],
+            "correct": 0,
+            "why": "Просто добавляем -s: cats."
+          },
+          {
+            "q": "One fox — two ___ .",
+            "options": [
+              "foxes",
+              "foxs",
+              "foxies"
+            ],
+            "correct": 0,
+            "why": "После -x добавляем -es: foxes."
+          },
+          {
+            "q": "One mouse — two ___ .",
+            "options": [
+              "mice",
+              "mouses",
+              "mices"
+            ],
+            "correct": 0,
+            "why": "Неправильная форма: mice."
+          },
+          {
+            "q": "One sheep — ten ___ .",
+            "options": [
+              "sheep",
+              "sheeps",
+              "sheepes"
+            ],
+            "correct": 0,
+            "why": "Sheep не меняется: one sheep — ten sheep."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Дракончик на крыше",
+        "title_en": "The Little Dragon on the Roof",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🐉",
+                "🏠"
+              ],
+              "bg": "day",
+              "label": "Кто это на крыше?"
+            },
+            "lines": [
+              {
+                "en": "Look at the roof! It is a little dragon! He is green and very hungry.",
+                "ru": "Посмотрите на крышу! Это маленький дракон! Он зелёный и очень голодный."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐱",
+                "🍰"
+              ],
+              "bg": "day",
+              "label": "Вор тортов"
+            },
+            "lines": [
+              {
+                "en": "The dragon takes cakes from the bakery. Cakes are his favourite food!",
+                "ru": "Дракон забирает торты из пекарни. Торты — его любимая еда!"
+              },
+              {
+                "en": "The baker says: «Oh no! Where are my cakes?»",
+                "ru": "Пекарь говорит: «О нет! Где мои торты?»"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐕",
+                "🐉",
+                "🍯"
+              ],
+              "bg": "sunset",
+              "label": "Хитрость сэра Бруно"
+            },
+            "lines": [
+              {
+                "en": "Sir Bruno has got an idea. He puts honey cakes on the table. The dragon flies down!",
+                "ru": "У сэра Бруно есть идея. Он кладёт медовые торты на стол. Дракон слетает вниз!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🐉",
+                "🤝",
+                "😊"
+              ],
+              "bg": "day",
+              "label": "Друг навсегда"
+            },
+            "lines": [
+              {
+                "en": "«Please, live with us!» — says the cat. Now the dragon is the friend of the town.",
+                "ru": "«Пожалуйста, живи с нами!» — говорит кот. Теперь дракон — друг всего городка."
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "One mouse — two ___ .",
+            "options": [
+              "mice",
+              "mouses",
+              "mices"
+            ],
+            "correct": 0,
+            "ok": "Верно! Mice — исключение.",
+            "bad": "Правильно: mice."
+          },
+          {
+            "q": "I see three ___ in the forest. (лисы)",
+            "options": [
+              "foxes",
+              "foxs",
+              "fox"
+            ],
+            "correct": 0,
+            "ok": "Верно! Fox → foxes.",
+            "bad": "После -x добавляем -es: foxes."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "cat",
+              "кот"
+            ],
+            [
+              "horse",
+              "лошадь"
+            ],
+            [
+              "dragon",
+              "дракон"
+            ],
+            [
+              "bear",
+              "медведь"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски слово «дракон».",
+            "answer": "dragon",
+            "hint": "Начинается на d…"
+          }
+        ]
+      }
+    },
+    {
+      "n": 9,
+      "title_ru": "Места в городке",
+      "title_en": "Places in Town",
+      "words": [
+        {
+          "en": "street",
+          "ru": "улица",
+          "ipa": "/striːt/",
+          "emoji": "🛣️"
+        },
+        {
+          "en": "shop",
+          "ru": "магазин",
+          "ipa": "/ʃɒp/",
+          "emoji": "🏪"
+        },
+        {
+          "en": "school",
+          "ru": "школа",
+          "ipa": "/skuːl/",
+          "emoji": "🏫"
+        },
+        {
+          "en": "tower",
+          "ru": "башня",
+          "ipa": "/ˈtaʊə(r)/",
+          "emoji": "🗼"
+        },
+        {
+          "en": "bridge",
+          "ru": "мост",
+          "ipa": "/brɪdʒ/",
+          "emoji": "🌉"
+        },
+        {
+          "en": "park",
+          "ru": "парк",
+          "ipa": "/pɑːk/",
+          "emoji": "🌳"
+        },
+        {
+          "en": "river",
+          "ru": "река",
+          "ipa": "/ˈrɪvə(r)/",
+          "emoji": "🏞️"
+        },
+        {
+          "en": "forest",
+          "ru": "лес",
+          "ipa": "/ˈfɒrɪst/",
+          "emoji": "🌲"
+        },
+        {
+          "en": "castle",
+          "ru": "замок",
+          "ipa": "/ˈkɑːsl/",
+          "emoji": "🏰"
+        },
+        {
+          "en": "well",
+          "ru": "колодец",
+          "ipa": "/wel/",
+          "emoji": "⛲"
+        },
+        {
+          "en": "square",
+          "ru": "площадь",
+          "ipa": "/skweə(r)/",
+          "emoji": "🏛️"
+        },
+        {
+          "en": "mill",
+          "ru": "мельница",
+          "ipa": "/mɪl/",
+          "emoji": "🏭"
+        }
+      ],
+      "grammar": {
+        "title": "Where is…? Предлоги in, on, under, near",
+        "intro": "Сэр Бруно ищет карту сокровищ. Где она? На столе? Под кроватью? Учимся говорить ГДЕ.",
+        "rules": [
+          "Where is the cat? — Где кот?",
+          "in — в: The cat is in the house. (в доме)",
+          "on — на: The key is on the table. (на столе)",
+          "under — под: The mouse is under the chair. (под стулом)",
+          "near — рядом: The shop is near the bridge. (рядом с мостом)"
+        ],
+        "examples": [
+          {
+            "en": "The shop is near the square.",
+            "ru": "Магазин рядом с площадью."
+          },
+          {
+            "en": "The mill is on the river.",
+            "ru": "Мельница на реке."
+          },
+          {
+            "en": "Where is the castle? — It is in the forest!",
+            "ru": "Где замок? — Он в лесу!"
+          }
+        ],
+        "quiz": [
+          {
+            "q": "The key is ___ the table. (на)",
+            "options": [
+              "on",
+              "in",
+              "under"
+            ],
+            "correct": 0,
+            "why": "На столе — on the table."
+          },
+          {
+            "q": "The mouse is ___ the bed. (под)",
+            "options": [
+              "under",
+              "on",
+              "near"
+            ],
+            "correct": 0,
+            "why": "Под кроватью — under the bed."
+          },
+          {
+            "q": "The shop is ___ the bridge. (рядом с)",
+            "options": [
+              "near",
+              "in",
+              "under"
+            ],
+            "correct": 0,
+            "why": "Рядом — near."
+          },
+          {
+            "q": "___ is the castle?",
+            "options": [
+              "Where",
+              "What",
+              "Who"
+            ],
+            "correct": 0,
+            "why": "«Где?» — Where."
+          }
+        ]
+      },
+      "story": {
+        "title_ru": "Карта сокровищ",
+        "title_en": "The Treasure Map",
+        "parts": [
+          {
+            "scene": {
+              "emoji": [
+                "🗺️",
+                "❌"
+              ],
+              "bg": "day",
+              "label": "Находка у колодца"
+            },
+            "lines": [
+              {
+                "en": "Tom is near the well. He sees an old paper. It is a treasure map!",
+                "ru": "Том рядом с колодцем. Он видит старую бумагу. Это карта сокровищ!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🌉",
+                "🚶",
+                "🐱"
+              ],
+              "bg": "day",
+              "label": "Через мост"
+            },
+            "lines": [
+              {
+                "en": "«Cross the bridge,» says the map. «Go past the shop and the square.»",
+                "ru": "«Перейди мост, — говорит карта. — Пройди мимо магазина и площади.»"
+              },
+              {
+                "en": "Mr. Whiskers goes with Tom. The walk is long!",
+                "ru": "Мистер Уискерс идёт с Томом. Прогулка долгая!"
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "🌬️",
+                "🌲",
+                "⛏️"
+              ],
+              "bg": "sunset",
+              "label": "Старая мельница"
+            },
+            "lines": [
+              {
+                "en": "The X is near the old mill in the forest. They look under a big stone.",
+                "ru": "Крестик рядом со старой мельницей в лесу. Они заглядывают под большой камень."
+              }
+            ]
+          },
+          {
+            "scene": {
+              "emoji": [
+                "💎",
+                "📖"
+              ],
+              "bg": "night",
+              "label": "Сокровище"
+            },
+            "lines": [
+              {
+                "en": "The treasure is… a book of English words! «Real magic!» — says the cat.",
+                "ru": "Сокровище — это… книга английских слов! «Настоящая магия!» — говорит кот."
+              }
+            ]
+          }
+        ]
+      },
+      "test": {
+        "choice": [
+          {
+            "q": "The cat is ___ the house. (в)",
+            "options": [
+              "in",
+              "on",
+              "near"
+            ],
+            "correct": 0,
+            "ok": "Верно! In — внутри.",
+            "bad": "Внутри — in the house."
+          },
+          {
+            "q": "___ is the tower? — It is near the castle.",
+            "options": [
+              "Where",
+              "What",
+              "How"
+            ],
+            "correct": 0,
+            "ok": "Верно! Where — где.",
+            "bad": "«Где» — Where."
+          }
+        ],
+        "matching": {
+          "pairs": [
+            [
+              "shop",
+              "магазин"
+            ],
+            [
+              "bridge",
+              "мост"
+            ],
+            [
+              "forest",
+              "лес"
+            ],
+            [
+              "castle",
+              "замок"
+            ]
+          ]
+        },
+        "string": [
+          {
+            "q": "Напишите по-английски слово «замок».",
+            "answer": "castle",
+            "hint": "Начинается на c…"
+          }
+        ]
+      }
+    }
+  ]
+}
