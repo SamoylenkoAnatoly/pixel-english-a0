@@ -98,6 +98,10 @@ def iframe(url, h=680):
     return '<p><iframe src="%s" width="100%%" height="%d" frameborder="0" allow="autoplay"></iframe></p>' % (url, h)
 
 
+def ids_query(ids):
+    return "&".join("ids[]=%d" % i for i in ids)
+
+
 def cmd_inspect():
     a = Api()
     code, c = a.get("courses/%d" % COURSE)
@@ -106,20 +110,24 @@ def cmd_inspect():
     print("summary:", (cr.get("summary") or "")[:100])
     print("is_public:", cr.get("is_public"), "| sections:", cr.get("sections"))
     secs = cr.get("sections") or []
+    total_steps = 0
     if secs:
-        code, sd = a.get("sections?" + urllib.parse.urlencode({"ids[]": secs}))
+        code, sd = a.get("sections?" + ids_query(secs))
         for s in sd["sections"]:
             print("section", s["id"], "pos", s.get("position"), repr(s.get("title")), "units", len(s.get("units") or []))
             us = s.get("units") or []
             if us:
-                code, ud = a.get("units?" + urllib.parse.urlencode({"ids[]": us}))
+                code, ud = a.get("units?" + ids_query(us))
                 for u in ud["units"]:
                     lid = u.get("lesson")
                     print("  unit", u["id"], "pos", u.get("position"), "lesson", lid)
                     if lid:
                         code, ld = a.get("lessons/%d" % lid)
                         for L in ld["lessons"]:
-                            print("    lesson", L["id"], repr(L.get("title")), "steps", len(L.get("steps") or []))
+                            ns = len(L.get("steps") or [])
+                            total_steps += ns
+                            print("    lesson", L["id"], repr(L.get("title")), "steps", ns)
+    print("TOTAL_STEPS:", total_steps)
     print("TOKEN_OK")
 
 
